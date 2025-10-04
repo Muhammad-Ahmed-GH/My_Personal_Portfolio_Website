@@ -65,8 +65,9 @@ body {
   /* colors */
   --text-color: #000000;
   --main-color: #0084ff;
-  --main-color-lighter: #2d97ff;
+  --main-color-light: #2d97ff;
   --second-main-color: #5900ff;
+  --second-main-color-light: #a676ff;
   --background-color: #ffffff;
   --second-background-color: #000038;
   --card-background-color: #ffffff;
@@ -75,7 +76,6 @@ body {
   /* gradients */
   --main-btn-gradient: linear-gradient(45deg, #37019b, #5900ff, #ae83ff);
   --resume-btn-gradient: linear-gradient(45deg, #ff00bf, #ff5900, #ffbf00);
-  --main-section-gradient: radial-gradient(at 100vw 0, #24436f, #060913);
 }
 
 :root.dark {
@@ -180,6 +180,20 @@ nav ul {
   gap: 20px;
 }
 
+nav a {
+  display: block;
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 1.15em;
+  transition: 0.5s;
+}
+
+nav ul li:hover a,
+.logo:hover {
+  color: var(--second-main-color);
+}
+
 @media(max-width: 767px) {
 
   /* this is to help us implement hover */
@@ -210,22 +224,16 @@ nav ul {
   }
 
   nav ul li a {
+    font-weight: 300;
     padding: 15px;
+    color: white;
+    border-bottom: 1px transparent solid;
   }
-}
-
-nav a {
-  display: block;
-  text-decoration: none;
-  color: var(--main-color);
-  font-weight: 500;
-  font-size: 1.15em;
-  transition: color 0.5s;
-}
-
-nav ul li:hover a,
-.logo:hover {
-  color: var(--second-main-color);
+  
+  nav ul li a:hover {
+    color: var(--second-main-color-light);
+    border-color: var(--second-main-color-light);
+  }
 }
 
 nav a .nav-link-icon {
@@ -235,7 +243,7 @@ nav a .nav-link-icon {
 /* landing */
 
 .landing {
-  background-image: var(--main-section-gradient);
+  background-image: radial-gradient(at 100vw 0, #24436f, #060913);
   background-attachment: fixed;
 }
 
@@ -254,7 +262,7 @@ nav a .nav-link-icon {
 
 .landing h2 span {
   display: inline-block;
-  color: var(--main-color-lighter);
+  color: var(--main-color-light);
   font-size: 3em;
   font-weight: 700;
 }
