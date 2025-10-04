@@ -68,7 +68,8 @@ body {
   --cardBackgroundColor: #ffffff;
   --boxShadowColor: #0000008a;
   --mainBtnGradient: linear-gradient(45deg, #4c00ff, #0051ff, #00a6ff);
-  --resumeBtnGradient: linear-gradient(45deg, #ae2300, #ff3c00, #ffae00);
+  /* --resumeBtnGradient: linear-gradient(45deg, #ae2300, #ff3c00, #ffae00); */
+  --resumeBtnGradient: linear-gradient(45deg, #474747, #5c5c5c, #a2a2a2);
   --mainSectionGradient: radial-gradient(at 100vw 0, #24436f, #060913);
 
   --darkBtnRadius: 50px;
@@ -246,7 +247,6 @@ nav a .nav-link-icon {
   justify-content: center;
 }
 
-
 .landing h2 {
   color: white;
   font-size: 1.3em;
@@ -258,6 +258,18 @@ nav a .nav-link-icon {
   color: var(--mainColorLighter);
   font-size: 3em;
   font-weight: 700;
+}
+@media(max-width: 767px) {
+  .landing {
+    font-size: 14px;
+    text-align: center;
+  }
+  h2 {
+    margin-bottom: 30px;
+  }
+  h2 span {
+    line-height: 1.2;
+  }
 }
 
 .landing h3 {
@@ -278,10 +290,12 @@ nav a .nav-link-icon {
   display: inline-block;
   text-decoration: none;
 
+  width: 180px;
   padding: 7px 30px;
   color: white;
   border-radius: 5px;
   font-size: 1.2em;
+  text-align: center;
 
   background-size: 150%;
   background-position: right;
@@ -310,6 +324,16 @@ nav a .nav-link-icon {
 .social-icons {
   display: flex;
   gap: 27px;
+}
+
+@media(max-width: 767px) {
+  .landing-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-icons {
+    justify-content: center;
+  }
 }
 
 .social-icons a {
