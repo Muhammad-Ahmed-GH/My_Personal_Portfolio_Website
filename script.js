@@ -14,7 +14,7 @@ function switchPageTheme() {
 function initPageTheme() {
   if (prefersDark.matches) {
     darkButton.classList.add('dark');
-    darkButton.title = 'switch to Dark Mode';    
+    darkButton.title = 'switch to Dark Mode';
     root.classList.add('dark');
   }
   else {
