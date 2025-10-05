@@ -1,59 +1,63 @@
 # Muhammad Ahmed | Portfolio Website
 
-A modern, responsive personal portfolio website to showcase my projects, skills, and contact information. Built using **HTML**, **CSS**, and **JavaScript** with a clean design and support for light/dark mode.
+A modern, responsive personal portfolio to showcase projects, skills, and contact details. Built with HTML, CSS, and a minimal amount of JavaScript.
 
 ## Features
 
-- Responsive design for all devices
-- Light/Dark mode toggle
-- Project showcase with images and links
+- Responsive layout across devices
+- Automatic dark mode based on system preference
+- Smooth-scrolling navigation
+- Projects gallery with images and external links
 - Skills and future skills sections
 - Social media and contact links
-- Accessible and easy to navigate
 
 ## Demo
 
 [View Live Demo](https://muhammad-ahmed-tech.web.app)
 
+## Tech Stack
+
+- **HTML**
+- **CSS**
+- **JavaScript** (no frameworks, no build tools)
+
 ## Getting Started
 
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/Muhammad-Ahmed-GH/My_Personal_Portfolio_Website
-   ```
-2. **Navigate to the project folder:**
-   ```sh
-   cd My_Personal_Portfolio_Website
-   ```
-3. **Open `index.html` in your browser.**
+1. Download or clone the repository.
+2. Open `index.html` in your browser.
 
 No build steps or dependencies required.
 
 ## Folder Structure
 
 ```
-.
 ├── index.html
 ├── style.css
 ├── script.js
 ├── imgs/
-│   ├── bank.png
-│   ├── favicon.ico
-│   ├── hospital-building.png
-│   ├── male-student.png
-│   ├── miscellanous.png
-│   ├── puzzle.png
-│   ├── school.png
-│   ├── template.png
-│   └── web-link.png
+│ ├── bank.png
+│ ├── favicon.ico
+│ ├── hospital-building.png
+│ ├── male-student.png
+│ ├── miscellanous.png
+│ ├── puzzle.png
+│ ├── school.png
+│ ├── template.png
+│ └── web-link.png
 └── README.md
 ```
 
 ## Customization
 
-- Update `index.html` to add or modify your projects, skills, and contact info.
-- Replace images in the `imgs/` folder as needed.
-- Edit `style.css` for custom styles.
+- Update `index.html` to modify projects, skills, and contact info.
+- Replace assets in `imgs/` as needed.
+- Tweak styles in `style.css`.
+- `script.js` initializes theme based on system preference; you can extend it to add a manual toggle if desired.
+
+## Notes
+
+- Icons are served via CDNs (Font Awesome, Bootstrap Icons, Devicon); an internet connection is required for them to load.
+- Fonts are loaded from Google Fonts.
 
 ## Credits
 
