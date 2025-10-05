@@ -275,28 +275,27 @@ nav a .nav-link-icon {
   font-weight: 700;
 }
 
+.landing h3 {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
 @media(max-width: 767px) {
   .landing {
     font-size: 14px;
     text-align: center;
   }
 
-  h2 {
+  .landing h2 {
     margin-bottom: 30px;
-    font-size: 0.8em;
   }
 
-  h2 span {
+  .landing h2 span {
     margin-top: 15px;
-    line-height: 1.2;
+    line-height: 1.1;
   }
-}
-
-.landing h3 {
-  color: white;
-  font-size: 1.5em;
-  font-weight: 400;
-  margin-bottom: 30px;
 }
 
 .landing-btns {
