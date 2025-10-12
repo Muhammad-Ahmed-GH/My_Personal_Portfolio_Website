@@ -245,10 +245,6 @@ nav ul li:hover a,
   }
 }
 
-nav a .nav-link-icon {
-  display: none;
-}
-
 /* landing */
 
 .landing {
@@ -508,7 +504,7 @@ footer .social-icons a {
   font-size: 1em;
 }
 
-/* currently commented in html document */
+/* currently discarded
 .dark-btn {
   width: var(--dark-btn-radius);
   height: var(--dark-btn-radius);
@@ -551,7 +547,7 @@ footer .social-icons a {
 
 .dark-btn.dark::after {
   transform: scale(1);
-}
+} */
 
 /* animations */
 @keyframes rotating {
