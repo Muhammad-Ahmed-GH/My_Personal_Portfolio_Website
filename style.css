@@ -97,7 +97,7 @@ section {
   color: var(--text-color);
 }
 
-section .title {
+section .container > .title {
   color: var(--main-color);
   font-size: 2em;
   margin-bottom: 30px;
@@ -374,7 +374,6 @@ nav a .nav-link-icon {
 /* projects */
 
 .projects .card {
-  width: 400px;
   text-align: initial;
   padding: 0;
   border: white solid 1px;
@@ -383,61 +382,75 @@ nav a .nav-link-icon {
   flex-direction: column;
 }
 
-.project-image {
+.projects .card .image {
   text-align: center;
   overflow: hidden;
   background-color: var(--second-main-color);
-  height: 200px;
+  height: 180px;
   padding-top: 20px;
   transition: filter 0.5s, background-color 0.5s;
 }
 
-.projects .card:hover .project-image {
+.projects .card:hover .image {
   filter: brightness(1.14);
 }
 
-.project-image img {
+.projects .card .image img {
   width: 50%;
 }
 
-.project-info {
+.projects .card .body {
   padding: 15px;
-  flex-grow: 1;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
 }
 
-.project-info strong {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.projects .card .title {
   text-transform: capitalize;
 }
 
-.project-info strong a {
+.projects .card p {
+  margin-bottom: 15px;
+}
+
+.projects .card .foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 1.05em;
+}
+
+.projects .card .foot .status {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.projects .card .foot .status.done i {
+  color: #1da91d;
+}
+
+.projects .card .foot .status.in-prog i {
+  color: var(--main-color-light);
+  animation: rotating 2.5s linear infinite;
+}
+
+.projects .card .foot a {
   text-align: center;
   display: inline-block;
   text-decoration: none;
   color: white;
   background-color: var(--main-color);
-  padding: 5px 15px;
+  padding: 4px 25px;
   transition: background-color 0.5s;
   border-radius: 5px;
 }
 
-.project-info strong a:hover {
+.projects .card .foot a:hover {
   background-color: var(--second-main-color);
-}
-
-.project-info strong a.virtual-btn {
-  pointer-events: none;
-  filter: grayscale(1);
-}
-
-.projects .card .project-title {
-  text-transform: capitalize;
 }
 
 /* contact */
@@ -536,4 +549,11 @@ footer .social-icons a {
 
 .dark-btn.dark::after {
   transform: scale(1);
+}
+
+/* animations */
+@keyframes rotating {
+  100% {
+    transform: rotate(360deg);
+  }
 }
