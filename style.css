@@ -393,7 +393,7 @@ nav ul li:hover a,
   filter: brightness(1.14);
 }
 
-.projects .card .image img {
+.projects .card img {
   width: 50%;
 }
 
@@ -421,34 +421,47 @@ nav ul li:hover a,
   font-size: 1.05em;
 }
 
-.projects .card .foot .status {
+.projects .card .status {
   display: flex;
   gap: 7px;
   align-items: center;
 }
 
-.projects .card .foot .status.done i {
+.projects .card .status.done i {
   color: #1da91d;
 }
 
-.projects .card .foot .status.in-prog i {
+.projects .card .status.in-prog i {
   color: var(--main-color-light);
   animation: rotating 2.5s linear infinite;
 }
 
-.projects .card .foot a {
+.projects .card .options {
+  display: flex;
+  gap: 10px;
+}
+
+.projects .card a {
   text-align: center;
-  display: inline-block;
   text-decoration: none;
   color: white;
   background-color: var(--main-color);
-  padding: 4px 25px;
-  transition: background-color 0.5s;
+  padding: 4px 0;
+  width: 80px;
+  transition: 0.5s;
   border-radius: 5px;
 }
 
-.projects .card .foot a:hover {
+.projects .card .github-repo {
+  background-color: black;
+}
+
+.projects .card a:hover {
   background-color: var(--second-main-color);
+}
+
+.projects .card .github-repo:hover {
+  background-color: #232323;
 }
 
 /* contact */
