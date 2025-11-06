@@ -73,6 +73,7 @@ body {
   --second-background-color: #000038;
   --card-background-color: #ffffff;
   --box-shadow-color: #0000002e;
+  --main-transition: 0.3s;
 
   /* gradients */
   --main-btn-gradient: linear-gradient(45deg, #37019b, #5900ff, #ae83ff);
@@ -97,7 +98,7 @@ section {
   color: var(--text-color);
 }
 
-section .container > .title {
+section .container>.title {
   color: var(--main-color);
   font-size: 2em;
   margin-bottom: 30px;
@@ -117,7 +118,7 @@ section .container > .title {
   box-shadow: 1px 3px 8px var(--box-shadow-color);
   background-color: var(--card-background-color);
   padding: 20px;
-  transition: transform 0.4s;
+  transition: transform var(--main-transition);
   border-radius: 5px;
   text-align: center;
 }
@@ -168,7 +169,7 @@ header .container {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.8em;
-  transition: color 0.5s;
+  transition: color var(--main-transition);
 }
 
 @media(max-width: 767px) {
@@ -195,7 +196,7 @@ nav a {
   color: var(--main-color);
   font-weight: 500;
   font-size: 1.15em;
-  transition: 0.5s;
+  transition: var(--main-transition);
 }
 
 nav ul li:hover a,
@@ -321,7 +322,7 @@ nav ul li:hover a,
   -moz-user-select: none;
   -o-user-select: none;
   user-select: none;
-  transition: background-position 0.4s, transform 0.4s;
+  transition: background-position var(--main-transition), transform var(--main-transition);
 }
 
 .main-btn {
@@ -386,7 +387,7 @@ nav ul li:hover a,
   background-color: var(--second-main-color);
   height: 180px;
   padding-top: 20px;
-  transition: filter 0.5s, background-color 0.5s;
+  transition: filter var(--main-transition), background-color var(--main-transition);
 }
 
 .projects .card:hover .image {
@@ -448,7 +449,7 @@ nav ul li:hover a,
   background-color: var(--main-color);
   padding: 4px 0;
   width: 80px;
-  transition: 0.5s;
+  transition: var(--main-transition);
   border-radius: 5px;
 }
 
@@ -478,7 +479,7 @@ nav ul li:hover a,
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
-  transition: color 0.5s;
+  transition: color var(--main-transition);
 }
 
 .contact .card a:hover {
