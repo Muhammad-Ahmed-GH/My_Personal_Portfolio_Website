@@ -98,7 +98,7 @@ section {
   color: var(--text-color);
 }
 
-section .container>.title {
+.container>.title {
   color: var(--main-color);
   font-size: 2em;
   margin-bottom: 30px;
@@ -185,7 +185,7 @@ nav .bars {
   cursor: pointer;
 }
 
-nav ul {
+nav .links {
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -200,7 +200,7 @@ nav a {
   transition: var(--main-transition);
 }
 
-nav ul li:hover a,
+nav a:hover,
 .logo:hover {
   color: var(--second-main-color);
 }
@@ -218,7 +218,7 @@ nav ul li:hover a,
     display: block;
   }
 
-  nav ul {
+  nav .links {
     display: flex;
     background-color: #00000070;
     flex-direction: column;
@@ -232,19 +232,19 @@ nav ul li:hover a,
     transition: var(--main-transition);
   }
 
-  .open ul {
+  .open .links {
     max-height: 300px;
     /* safe value that the menu won't exceed */
   }
 
-  nav ul li a {
+  nav .links a {
     font-weight: 300;
     padding: 15px;
     color: white;
     border-bottom: 1px transparent solid;
   }
 
-  nav ul li a:hover {
+  nav .links a:hover {
     /* color: var(--second-main-color-light);
     border-color: var(--second-main-color-light); */
     color: #8545fd;
@@ -309,8 +309,7 @@ nav ul li:hover a,
   margin-bottom: 30px;
 }
 
-.main-btn,
-.resume-btn {
+.landing-btns>* {
   display: inline-block;
   text-decoration: none;
 
@@ -339,8 +338,7 @@ nav ul li:hover a,
   background-image: var(--resume-btn-gradient);
 }
 
-.main-btn:hover,
-.resume-btn:hover {
+.landing-btns>:hover {
   background-position: left;
   transform: scale(1.03);
 }
@@ -434,11 +432,11 @@ nav ul li:hover a,
   align-items: center;
 }
 
-.projects .card .status.done i {
+.projects .card .done i {
   color: #1da91d;
 }
 
-.projects .card .status.in-prog i {
+.projects .card .in-prog i {
   color: var(--main-color-light);
   animation: rotating 2.5s linear infinite;
 }
@@ -523,51 +521,6 @@ footer .social-icons a {
   color: var(--text-color);
   font-size: 1em;
 }
-
-/* currently discarded
-.dark-btn {
-  width: var(--dark-btn-radius);
-  height: var(--dark-btn-radius);
-  border-radius: 50%;
-  background-color: var(--second-main-color);
-  border: 2px solid white;
-  cursor: pointer;
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  overflow: hidden;
-}
-
-.dark-btn::before {
-  content: "";
-  display: inline-block;
-  width: calc(var(--dark-btn-radius) * 3/5);
-  height: calc(var(--dark-btn-radius) * 3/5);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  border-radius: 50%;
-  background-color: white;
-  position: absolute;
-}
-
-.dark-btn::after {
-  content: "";
-  display: inline-block;
-  width: calc(var(--dark-btn-radius) * 3/5);
-  height: calc(var(--dark-btn-radius) * 3/5);
-  border-radius: 50%;
-  background-color: var(--second-main-color);
-  position: absolute;
-  right: 0;
-  transform: scale(0);
-  transition: transform 0.2s;
-}
-
-.dark-btn.dark::after {
-  transform: scale(1);
-} */
 
 /* animations */
 @keyframes rotating {
