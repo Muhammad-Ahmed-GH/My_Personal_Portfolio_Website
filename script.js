@@ -11,9 +11,9 @@ if (prefersDark.matches) {
 // menu toggle button
 let menuBtn = document.querySelector('nav .bars');
 menuBtn.onclick = function () {
-  if(this.parentElement.classList.contains('open')) {
+  if (this.parentElement.classList.contains('open')) {
     this.parentElement.classList.remove('open');
   } else {
     this.parentElement.classList.add('open');
   }
-}
+};

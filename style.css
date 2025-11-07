@@ -9,9 +9,9 @@ html[lang='ar'] {
 
 * {
   font-family: "Cairo", sans-serif;
-  margin: 0px;
-  padding: 0px;
   box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
 
 ul {
@@ -19,8 +19,8 @@ ul {
 }
 
 ::selection {
-  color: white;
   background-color: var(--main-color);
+  color: white;
 }
 
 body {
@@ -28,31 +28,31 @@ body {
 }
 
 .container {
-  padding-left: 15px;
   padding-right: 15px;
+  padding-left: 15px;
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 750px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    width: 750px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    width: 970px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    width: 970px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    width: 1170px;
   }
 }
 
@@ -92,17 +92,17 @@ body {
 
 /* components */
 section {
-  min-height: 100vh;
-  padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding);
+  min-height: 100vh;
   color: var(--text-color);
 }
 
 .container>.title {
-  color: var(--main-color);
-  font-size: 2em;
   margin-bottom: 30px;
+  color: var(--main-color);
   text-align: center;
+  font-size: 2em;
 }
 
 .cards {
@@ -117,12 +117,12 @@ section {
 .card {
   /* width: 330px; */
   max-width: 100%;
-  box-shadow: 1px 3px 8px var(--box-shadow-color);
-  background-color: var(--card-background-color);
   padding: 20px;
-  transition: transform var(--main-transition);
   border-radius: 5px;
   text-align: center;
+  background-color: var(--card-background-color);
+  box-shadow: 1px 3px 8px var(--box-shadow-color);
+  transition: transform var(--main-transition);
 }
 
 .card:hover {
@@ -130,9 +130,9 @@ section {
 }
 
 .card .icon {
-  font-size: 6em;
-  margin: 30px 0;
   display: inline-block;
+  margin: 30px 0;
+  font-size: 6em;
 }
 
 .card h3 {
@@ -144,11 +144,11 @@ section {
 /* header */
 
 header {
-  background-color: var(--background-color);
-  box-shadow: 0 0 5px 0 var(--box-shadow-color);
   width: 100%;
   position: fixed;
   z-index: 1000;
+  background-color: var(--background-color);
+  box-shadow: 0 0 5px 0 var(--box-shadow-color);
 }
 
 header .container {
@@ -166,11 +166,11 @@ header .container {
 }
 
 .logo {
-  text-decoration: none;
   color: var(--main-color);
-  text-transform: uppercase;
+  text-decoration: none;
   font-weight: 700;
   font-size: 1.8em;
+  text-transform: uppercase;
   transition: color var(--main-transition);
 }
 
@@ -195,8 +195,8 @@ nav .links {
 
 nav a {
   display: block;
-  text-decoration: none;
   color: var(--main-color);
+  text-decoration: none;
   font-weight: 500;
   font-size: 1.15em;
   transition: var(--main-transition);
@@ -211,9 +211,9 @@ nav a:hover,
 
   /* toggle menu */
   nav {
-    height: 100%;
     display: flex;
     align-items: center;
+    height: 100%;
   }
 
   nav .bars {
@@ -222,7 +222,6 @@ nav a:hover,
 
   nav .links {
     display: flex;
-    background-color: #00000070;
     flex-direction: column;
     gap: 0;
     position: absolute;
@@ -231,6 +230,7 @@ nav a:hover,
     width: 100%;
     max-height: 0;
     overflow: hidden;
+    background-color: #00000070;
     transition: var(--main-transition);
   }
 
@@ -240,10 +240,10 @@ nav a:hover,
   }
 
   nav .links a {
-    font-weight: 300;
     padding: 15px;
-    color: white;
     border-bottom: 1px transparent solid;
+    font-weight: 300;
+    color: white;
   }
 
   nav .links a:hover {
@@ -257,16 +257,16 @@ nav a:hover,
 /* landing */
 
 .landing {
+  padding-top: calc(var(--section-padding) + var(--header-height));
   background-image: radial-gradient(at 100vw 0, #24436f, #060913);
   background-attachment: fixed;
-  padding-top: calc(var(--section-padding) + var(--header-height));
 }
 
 .landing .container {
-  min-height: calc(100vh - 200px - var(--header-height));
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: calc(100vh - 200px - var(--header-height));
 }
 
 .landing h2 {
@@ -283,10 +283,10 @@ nav a:hover,
 }
 
 .landing h3 {
+  margin-bottom: 30px;
   color: white;
   font-size: 1.5em;
   font-weight: 400;
-  margin-bottom: 30px;
 }
 
 @media(max-width: 767px) {
@@ -313,22 +313,16 @@ nav a:hover,
 
 .landing-btns>* {
   display: inline-block;
-  text-decoration: none;
-
   width: 180px;
   padding: 7px 30px;
-  color: white;
   border-radius: 5px;
+  color: white;
+  text-decoration: none;
   font-size: 1.2em;
   text-align: center;
-
+  user-select: none;
   background-size: 150%;
   background-position: right;
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none;
   transition: background-position var(--main-transition), transform var(--main-transition);
 }
 
@@ -387,20 +381,20 @@ nav a:hover,
 /* projects */
 
 .projects .card {
-  text-align: initial;
+  display: flex;
+  flex-direction: column;
   padding: 0;
   border: white solid 1px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  text-align: initial;
 }
 
 .projects .card .image {
-  text-align: center;
-  overflow: hidden;
-  background-color: var(--second-main-color);
   height: 180px;
   padding-top: 20px;
+  overflow: hidden;
+  text-align: center;
+  background-color: var(--second-main-color);
   transition: filter var(--main-transition), background-color var(--main-transition);
 }
 
@@ -413,11 +407,11 @@ nav a:hover,
 }
 
 .projects .card .body {
-  padding: 15px;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 15px;
 }
 
 .projects .card .title {
@@ -432,14 +426,14 @@ nav a:hover,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-transform: capitalize;
   font-size: 1.05em;
+  text-transform: capitalize;
 }
 
 .projects .card .status {
   display: flex;
-  gap: 7px;
   align-items: center;
+  gap: 7px;
 }
 
 .projects .card .done i {
@@ -457,14 +451,14 @@ nav a:hover,
 }
 
 .projects .card a {
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  background-color: var(--main-color);
-  padding: 4px 0;
   width: 80px;
-  transition: var(--main-transition);
+  padding: 4px 0;
   border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--main-color);
+  transition: var(--main-transition);
 }
 
 .projects .card .github-repo {
@@ -496,8 +490,8 @@ nav a:hover,
 }
 
 .contact .card a {
-  text-decoration: none;
   color: var(--text-color);
+  text-decoration: none;
   font-weight: 500;
   transition: color var(--main-transition);
 }
@@ -509,10 +503,10 @@ nav a:hover,
 /* footer */
 
 footer {
-  color: var(--text-color);
   min-height: 100px;
   padding-top: 50px;
   padding-bottom: 50px;
+  color: var(--text-color);
   font-size: 1.15em;
 }
 
