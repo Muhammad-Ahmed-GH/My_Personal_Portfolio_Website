@@ -5,8 +5,16 @@ const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 if (prefersDark.matches) {
   root.classList.add('dark');
 } else {
-  root.classList.toggle('dark', false);
+  root.classList.remove('dark');
 }
+
+prefersDark.addEventListener('change', (e) => {
+  if (e.matches) {
+    root.classList.add('dark');
+  } else {
+    root.classList.remove('dark');
+  }
+});
 
 // menu toggle button
 let menuBtn = document.querySelector('nav .bars');
