@@ -106,14 +106,16 @@ section {
 }
 
 .cards {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 50px;
 }
 
 .card {
-  width: 330px;
+  /* width: 330px; */
   max-width: 100%;
   box-shadow: 1px 3px 8px var(--box-shadow-color);
   background-color: var(--card-background-color);
@@ -473,6 +475,12 @@ nav a:hover,
 
 .contact {
   background-color: var(--second-background-color);
+}
+
+.contact .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contact .card {
