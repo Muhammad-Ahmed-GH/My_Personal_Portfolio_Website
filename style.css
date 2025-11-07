@@ -182,6 +182,7 @@ nav .bars {
   display: none;
   color: var(--text-color);
   font-size: 22px;
+  cursor: pointer;
 }
 
 nav ul {
@@ -206,11 +207,10 @@ nav ul li:hover a,
 
 @media(max-width: 767px) {
 
-  /* this is to help us implement hover */
+  /* toggle menu */
   nav {
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
   }
 
@@ -219,18 +219,22 @@ nav ul li:hover a,
   }
 
   nav ul {
-    display: none;
-  }
-
-  nav:hover ul {
     display: flex;
-    background-color: #000000b8;
+    background-color: #00000070;
     flex-direction: column;
     gap: 0;
     position: absolute;
     left: 0;
     top: 100%;
     width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--main-transition);
+  }
+
+  .open ul {
+    max-height: 300px;
+    /* safe value that the menu won't exceed */
   }
 
   nav ul li a {
