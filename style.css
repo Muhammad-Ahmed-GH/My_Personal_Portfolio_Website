@@ -245,8 +245,10 @@ nav ul li:hover a,
   }
 
   nav ul li a:hover {
-    color: var(--second-main-color-light);
-    border-color: var(--second-main-color-light);
+    /* color: var(--second-main-color-light);
+    border-color: var(--second-main-color-light); */
+    color: #8545fd;
+    border-color: #8545fd;
   }
 }
 
