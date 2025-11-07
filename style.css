@@ -350,6 +350,14 @@ nav a:hover,
   gap: 27px;
 }
 
+.social-icons a {
+  transition: var(--main-transition);
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+}
+
 @media(max-width: 767px) {
   .landing-btns {
     flex-direction: column;
