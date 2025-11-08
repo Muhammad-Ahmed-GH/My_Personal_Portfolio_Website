@@ -3,7 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 
-html[lang='ar'] {
+html[lang="ar"] {
   direction: rtl;
 }
 
@@ -98,7 +98,7 @@ section {
   color: var(--text-color);
 }
 
-.container>.title {
+.container > .title {
   margin-bottom: 30px;
   color: var(--main-color);
   text-align: center;
@@ -174,7 +174,7 @@ header .container {
   transition: color var(--main-transition);
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .logo {
     font-size: 1.5em;
   }
@@ -237,8 +237,7 @@ nav a:hover,
   color: var(--second-main-color);
 }
 
-@media(max-width: 767px) {
-
+@media (max-width: 767px) {
   /* toggle menu */
   nav {
     display: flex;
@@ -319,7 +318,7 @@ nav a:hover,
   font-weight: 400;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .landing {
     font-size: 14px;
     text-align: center;
@@ -341,7 +340,7 @@ nav a:hover,
   margin-bottom: 30px;
 }
 
-.landing-btns>* {
+.landing-btns > * {
   display: inline-block;
   width: 180px;
   padding: 7px 30px;
@@ -353,7 +352,8 @@ nav a:hover,
   user-select: none;
   background-size: 150%;
   background-position: right;
-  transition: background-position var(--main-transition), transform var(--main-transition);
+  transition: background-position var(--main-transition),
+    transform var(--main-transition);
 }
 
 .main-btn {
@@ -364,7 +364,7 @@ nav a:hover,
   background-image: var(--resume-btn-gradient);
 }
 
-.landing-btns>:hover {
+.landing-btns > :hover {
   background-position: left;
   transform: scale(1.03);
 }
@@ -382,7 +382,7 @@ nav a:hover,
   transform: translateY(-3px);
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .landing-btns {
     flex-direction: column;
     align-items: center;
@@ -425,7 +425,8 @@ nav a:hover,
   overflow: hidden;
   text-align: center;
   background-color: var(--second-main-color);
-  transition: filter var(--main-transition), background-color var(--main-transition);
+  transition: filter var(--main-transition),
+    background-color var(--main-transition);
 }
 
 .projects .card:hover .image {
