@@ -1,27 +1,24 @@
 let root = document.documentElement;
 
-// setting page theme color
-const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-if (prefersDark.matches) {
-  root.classList.add('dark');
-} else {
-  root.classList.remove('dark');
-}
-
-prefersDark.addEventListener('change', (e) => {
-  if (e.matches) {
-    root.classList.add('dark');
-  } else {
+let setTheme = function (isDark) {
+  isDark ?
+    root.classList.add('dark') :
     root.classList.remove('dark');
-  }
+};
+
+let media = window.matchMedia('(prefers-color-scheme: dark)');
+
+setTheme(media.matches);
+
+media.addEventListener('change', (e) => {
+  setTheme(e.matches);
 });
+
 
 // menu toggle button
 let menuBtn = document.querySelector('nav .bars');
 menuBtn.onclick = function () {
-  if (this.parentElement.classList.contains('open')) {
-    this.parentElement.classList.remove('open');
-  } else {
+  this.parentElement.classList.contains('open') ?
+    this.parentElement.classList.remove('open') :
     this.parentElement.classList.add('open');
-  }
 };
