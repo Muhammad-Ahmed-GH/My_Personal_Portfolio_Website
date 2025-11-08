@@ -1,24 +1,11 @@
 let root = document.documentElement;
 
-let setTheme = function (isDark) {
-  isDark ?
-    root.classList.add('dark') :
-    root.classList.remove('dark');
-};
-
+// control color theme
 let media = window.matchMedia('(prefers-color-scheme: dark)');
-
-setTheme(media.matches);
-
-media.addEventListener('change', (e) => {
-  setTheme(e.matches);
-});
-
+if (media.matches)
+  root.classList.add('dark');
+media.onchange = () => root.classList.toggle('dark');
 
 // menu toggle button
 let menuBtn = document.querySelector('nav .bars');
-menuBtn.onclick = function () {
-  this.parentElement.classList.contains('open') ?
-    this.parentElement.classList.remove('open') :
-    this.parentElement.classList.add('open');
-};
+menuBtn.onclick = () => menuBtn.closest('nav').classList.toggle('open');
