@@ -182,9 +182,39 @@ header .container {
 
 nav .bars {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 25px;
   color: var(--text-color);
   font-size: 22px;
   cursor: pointer;
+}
+
+nav .bars span {
+  display: block;
+  height: 3px;
+  border-radius: 9999px;
+  background-color: var(--text-color);
+  transition: var(--main-transition);
+}
+
+.open .bars span {
+  background-color: #ff5757;
+}
+
+.open .bars span:first-child {
+  transform: translateY(calc(3px + 5px)) rotate(45deg);
+  /* bar height + gap */
+}
+
+.open .bars span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.open .bars span:last-child {
+  transform: translateY(calc(-3px - 5px)) rotate(-45deg);
 }
 
 nav .links {
@@ -217,7 +247,7 @@ nav a:hover,
   }
 
   nav .bars {
-    display: block;
+    display: flex;
   }
 
   nav .links {
