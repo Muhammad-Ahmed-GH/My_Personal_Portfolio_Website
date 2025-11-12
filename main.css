@@ -8,7 +8,7 @@ html[lang="ar"] {
 }
 
 * {
-  font-family: "Cairo", sans-serif;
+  font-family: "Rubik", sans-serif;
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
@@ -60,19 +60,22 @@ body {
 :root {
   /* dimensions */
   --section-padding: 100px;
-  --header-height: 75px;
+  --header-height: 100px;
   --dark-btn-radius: 50px;
 
   /* colors */
+  --main-color: #ec5b53;
+  --main-color-alt: #e44239;
+  --main-color-light: #ee7973;
+  --heading-color: #002d5b;
+  --text-color-light: #464d65;
   --text-color: #000000;
-  --main-color: #0084ff;
-  --main-color-light: #2d97ff;
-  --second-main-color: #5900ff;
-  --second-main-color-light: #a676ff;
-  --background-color: #ffffff;
-  --second-background-color: #000038;
-  --card-background-color: #ffffff;
+  --text-color-alt: #10285d;
+
   --box-shadow-color: #0000002e;
+  /* --background-color: #ffffff;
+  --second-background-color: #000038; */
+  --card-background-color: #ffffff;
   --main-transition: 0.3s;
 
   /* gradients */
@@ -80,15 +83,20 @@ body {
   --resume-btn-gradient: linear-gradient(45deg, #ff00bf, #ff5900, #ffbf00);
 }
 
-:root.dark {
-  /* colors */
+@media (max-width: 767px) {
+  :root {
+    --header-height: 55px;
+  }
+}
+
+/* :root.dark {
   --text-color: #ffffff;
   --main-color: #56adff;
   --second-main-color: #925bf9;
   --background-color: #373737;
   --card-background-color: #414141;
   --box-shadow-color: #8b8b8b8a;
-}
+} */
 
 /* components */
 section {
@@ -147,7 +155,7 @@ header {
   width: 100%;
   position: fixed;
   z-index: 1000;
-  background-color: var(--background-color);
+  background-color: white;
   box-shadow: 0 0 5px 0 var(--box-shadow-color);
 }
 
@@ -159,28 +167,39 @@ header .container {
   position: relative;
 }
 
-@media (max-width: 767px) {
-  :root {
-    --header-height: 55px;
-  }
-}
-
-.logo {
-  color: var(--main-color);
+header .logo {
+  color: initial;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.8em;
   text-transform: uppercase;
   transition: color var(--main-transition);
 }
 
+header .logo:hover {
+  color: var(--main-color);
+}
+
 @media (max-width: 767px) {
-  .logo {
+  header .logo {
     font-size: 1.5em;
+    color: var(--main-color);
   }
 }
 
-nav .bars {
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+@media (max-width: 1199px) {
+  header nav {
+    gap: 20px;
+  }
+}
+
+header .links .bars {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -191,7 +210,13 @@ nav .bars {
   cursor: pointer;
 }
 
-nav .bars span {
+@media (max-width: 767px) {
+  header .links .bars {
+    display: flex;
+  }
+}
+
+.links .bars span {
   display: block;
   height: 3px;
   border-radius: 9999px;
@@ -203,84 +228,138 @@ nav .bars span {
   background-color: #ff5757;
 }
 
-.open .bars span:first-child {
+.open .bars :first-child {
   transform: translateY(calc(3px + 5px)) rotate(45deg);
   /* bar height + gap */
 }
 
-.open .bars span:nth-child(2) {
+.open .bars :nth-child(2) {
   opacity: 0;
   transform: translateX(-10px);
 }
 
-.open .bars span:last-child {
+.open .bars :last-child {
   transform: translateY(calc(-3px - 5px)) rotate(-45deg);
 }
 
-nav .links {
+header ul {
   display: flex;
-  justify-content: space-between;
   gap: 20px;
+  height: 100%;
 }
 
-nav a {
-  display: block;
-  color: var(--main-color);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.15em;
-  transition: var(--main-transition);
-}
-
-nav a:hover,
-.logo:hover {
-  color: var(--second-main-color);
+@media (max-width: 1199px) {
+  header ul {
+    gap: 10px;
+  }
 }
 
 @media (max-width: 767px) {
-  /* toggle menu */
-  nav {
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
-
-  nav .bars {
-    display: flex;
-  }
-
-  nav .links {
-    display: flex;
+  nav ul {
     flex-direction: column;
+    align-items: initial;
     gap: 0;
     position: absolute;
     left: 0;
     top: 100%;
     width: 100%;
+    height: initial;
     max-height: 0;
     overflow: hidden;
-    background-color: #00000070;
+    background-color: #f0f0f0;
     transition: var(--main-transition);
   }
 
-  .open .links {
+  .open ul {
     max-height: 300px;
     /* safe value that the menu won't exceed */
   }
+}
 
-  nav .links a {
+header ul a {
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+  padding: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  color: initial;
+  transition: var(--main-transition);
+}
+
+header ul a:hover {
+  color: var(--main-color);
+}
+
+@media (max-width: 1199px) {
+  header ul a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  nav ul a {
     padding: 15px;
-    border-bottom: 1px transparent solid;
+    position: relative;
+    z-index: 0;
     font-weight: 300;
-    color: white;
   }
 
-  nav .links a:hover {
-    /* color: var(--second-main-color-light);
-    border-color: var(--second-main-color-light); */
-    color: #8545fd;
-    border-color: #8545fd;
+  nav ul a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    z-index: -1;
+    border-bottom: 1px var(--main-color) solid;
+    background-color: #e8e8e8;
+    transition: var(--main-transition);
   }
+
+  nav ul a:hover {
+    color: initial;
+  }
+
+  nav ul a:hover::before {
+    width: 100%;
+  }
+}
+
+header nav .resume-btn {
+  padding: 18px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 0;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: var(--main-color);
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  header nav .resume-btn {
+    display: none;
+  }
+}
+
+header nav .resume-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background-color: var(--main-color-alt);
+  z-index: -1;
+  transition: 0.7s cubic-bezier(0.47, 1.8, 0.17, 0.53);
+}
+
+header nav .resume-btn:hover::before {
+  width: 100%;
 }
 
 /* landing */
@@ -360,9 +439,9 @@ nav a:hover,
   background-image: var(--main-btn-gradient);
 }
 
-.resume-btn {
+/* .resume-btn {
   background-image: var(--resume-btn-gradient);
-}
+} */
 
 .landing-btns > :hover {
   background-position: left;
