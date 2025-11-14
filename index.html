@@ -10,17 +10,19 @@
     <title>Muhammad Ahmed | Portfolio Website</title>
 
     <!-- favicon of the website -->
-    <link rel="icon" href="images/favicon_light.ico" type="image/x-icon" />
-    <!-- fontawesome cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <!-- google fonts -->
+    <link rel="icon" href="images/favicon_light.png" />
+    <!-- google fonts (Rubik) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google fonts (Rufina) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <!-- bootstrap icons -->
@@ -35,7 +37,7 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
     <!-- main css file -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
   </head>
 
   <body>
@@ -43,48 +45,59 @@
       <div class="container">
         <a class="logo" href="#main">muhammad ahmed</a>
         <nav>
-          <div class="bars">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="links">
+            <div class="bars">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul>
+              <li>
+                <a href="#about-me">
+                  <span class="nav-link-text">About Me</span>
+                </a>
+              </li>
+              <li>
+                <a href="#skills">
+                  <span class="nav-link-text">Skills</span>
+                </a>
+              </li>
+              <li>
+                <a href="#projects">
+                  <span class="nav-link-text">Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="#contact">
+                  <span class="nav-link-text">Contact</span>
+                </a>
+              </li>
+            </ul>
           </div>
-          <ul class="links">
-            <li>
-              <a href="#about-me">
-                <span class="nav-link-text">About Me</span>
-              </a>
-            </li>
-            <li>
-              <a href="#skills">
-                <span class="nav-link-text">Skills</span>
-              </a>
-            </li>
-            <li>
-              <a href="#projects">
-                <span class="nav-link-text">Projects</span>
-              </a>
-            </li>
-            <li>
-              <a href="#contact">
-                <span class="nav-link-text">Contact Me</span>
-              </a>
-            </li>
-          </ul>
+          <a
+            href="https://drive.google.com/file/d/1GMqsPpJvMJhq6kkEH7Y21Cm6YqXnPPBZ/view?usp=drive_link"
+            class="main-btn"
+            target="_blank"
+            rel="noopener"
+            >View My Resume</a
+          >
         </nav>
       </div>
     </header>
 
-    <section class="landing" id="main">
+    <section class="landing wavy" id="main">
       <div class="container">
-        <h2>
-          Hello, I'm Muhammad <br />
-          <span>Frontend Developer</span>
-        </h2>
-        <h3>I'm an aspiring Web Developer, and a Computer Science Student</h3>
+        <p class="greeting">
+          Hey there, thanks for passing by
+          <span>I'm Muhammad<br />Frontend Developer</span>
+        </p>
+        <p class="desc">
+          I'm an aspiring Web Developer, and a Computer Science Student
+        </p>
         <div class="landing-btns">
           <a href="#projects" class="main-btn">View my work</a>
           <a
-            class="resume-btn"
+            class="alt-btn"
             href="https://drive.google.com/file/d/1GMqsPpJvMJhq6kkEH7Y21Cm6YqXnPPBZ/view?usp=drive_link"
             target="_blank"
             rel="noopener"
@@ -646,6 +659,11 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/ccf9235cab.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
   </body>
 </html>
