@@ -79,6 +79,8 @@ body {
   /* background color */
   --section-background-color: white;
   --section-background-color-alt: #e3e4e8;
+  --header-link-background-color: #f0f0f0;
+  --header-hover-link-background-color: #e8e8e8;
   --card-background-color: white;
   --card-hover-background-color: #f8f8f8;
   --card-border-color: #dae3ef;
@@ -100,6 +102,8 @@ body {
     /* background color */
     --section-background-color: #333;
     --section-background-color-alt: #3d3d3d;
+    --header-link-background-color: #4b4b4b;
+    --header-hover-link-background-color: #555555;
   }
 
   section:nth-child(odd) .cards .card {
@@ -393,7 +397,7 @@ header ul {
     height: initial;
     max-height: 0;
     overflow: hidden;
-    background-color: #f0f0f0;
+    background-color: var(--header-link-background-color);
     transition: var(--main-transition);
   }
 
@@ -442,7 +446,7 @@ header ul a:hover {
     width: 0;
     z-index: -1;
     border-bottom: 1px var(--main-color) solid;
-    background-color: #e8e8e8;
+    background-color: var(--header-hover-link-background-color);
     transition: var(--main-transition);
   }
 
@@ -452,6 +456,12 @@ header ul a:hover {
 
   nav ul a:hover::before {
     width: 100%;
+  }
+}
+
+@media((max-width: 767px) and (prefers-color-scheme: dark)) {
+  nav ul a:hover {
+    color: white;
   }
 }
 
@@ -637,7 +647,7 @@ header nav .main-btn {
 
 .projects .card .in-prog i {
   color: var(--main-color-light);
-  animation: rotating 2.5s linear infinite;
+  animation: rotating 5s linear infinite;
 }
 
 .projects .card a {
