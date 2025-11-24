@@ -95,6 +95,7 @@ body {
     /* text color */
     --text-color: white;
     --text-color-light: white;
+    --text-color-lightest: #bbb;
     --heading-text-color: #93b5ff;
     /* background color */
     --section-background-color: #333;
@@ -713,7 +714,13 @@ header nav .main-btn {
 }
 
 .contact .card a:hover {
-  color: #7c8ba3;
+  color: #252d3b;
+}
+
+@media(prefers-color-scheme: dark) {
+  .contact .card a:hover {
+    color: #bdbdbd;
+  }
 }
 
 /* footer */
