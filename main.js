@@ -3,9 +3,9 @@ let menuBtn = document.querySelector("nav .bars");
 menuBtn.onclick = () => menuBtn.closest("nav").classList.toggle("open");
 
 // set wavy class name
-let sections = document.querySelectorAll("body > :not(script):not(header)");
+let sections = document.querySelectorAll("body > section:not(.landing)");
 sections.forEach((section) => {
-  if (!section.classList.contains("landing")) {
-    section.classList.add("wavy");
-  }
+  section.classList.add("wavy");
 });
+let footer = document.querySelector("body > footer");
+footer.classList.add("wavy");
