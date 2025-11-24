@@ -628,6 +628,12 @@ header nav .main-btn {
   color: green;
 }
 
+@media(prefers-color-scheme: dark) {
+  .projects .card .done i {
+  color: #28b528;
+  }
+}
+
 .projects .card .in-prog i {
   color: var(--main-color-light);
   animation: rotating 2.5s linear infinite;
