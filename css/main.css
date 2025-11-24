@@ -58,13 +58,13 @@ body {
   /* dimensions */
   --section-padding: 120px;
   --header-height: 100px;
-  /* --dark-btn-radius: 50px; */
+  --scroll-btn-width: 50px;
 
   /* colors */
-  --orange: #ec5b53;
-  --light-orange: #ee7973;
-  --dark-orange: #e44239;
-  --light-transparent-orange: #ee79731c;
+  --orange: #f97b45;
+  --light-orange: #f99563;
+  --dark-orange: #f66a29;
+  --light-transparent-orange: #ff8d5828;
 
   /* main colors */
   --main-color: var(--orange);
@@ -595,10 +595,11 @@ header nav .main-btn {
 }
 
 .projects .card img {
+  display: block;
   width: 120px;
   max-width: 100%;
-  display: block;
   margin: 0 auto;
+  transition: var(--main-transition);
 }
 
 .projects .card .body {
@@ -636,9 +637,9 @@ header nav .main-btn {
   padding: 7px 0;
   width: 120px;
   border-radius: 9999px;
-  color: white;
   text-decoration: none;
   text-align: center;
+  color: white;
   transition: var(--main-transition);
 }
 
@@ -654,9 +655,21 @@ header nav .main-btn {
   border-color: black;
 }
 
+@media (prefers-color-scheme: dark) {
+  .projects .card .github-repo {
+    background-color: white;
+    color: black;
+  }
+
+  .projects .card .github-repo:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
 .projects .card .live-demo {
-  background-color: var(--main-color);
   border: 1px transparent solid;
+  background-color: var(--main-color);
 }
 
 .projects .card .live-demo:hover {
@@ -727,6 +740,34 @@ footer .container {
 footer .social-icons a {
   color: var(--text-color);
   font-size: 1em;
+}
+
+/* scroll button */
+.scroll-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: var(--scroll-btn-width);
+  height: var(--scroll-btn-width);
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 50%;
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  transition: var(--main-transition);
+}
+
+.scroll-btn.active {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.scroll-btn:hover {
+  background-color: var(--main-color-dark);
 }
 
 /* animations */
