@@ -7,15 +7,37 @@ html[lang="ar"] {
   direction: rtl;
 }
 
-* {
-  font-family: "Rubik", sans-serif;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
+  font-family: "Rubik", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
 
 ul {
   list-style: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+.scroll-btn:focus-visible {
+  outline: 2px solid var(--main-color);
+  outline-offset: 4px;
+  transition: outline 0.1s;
 }
 
 ::selection {
@@ -122,7 +144,6 @@ body {
     --main-color: #529af5;
     --main-color-light: #6ab7ff;
     --main-color-dark: #3b82f6;
-    --main-color-lightest: #93b9ff;
 
     /* Transparent versions */
     --light-transparent-blue: #529af533;
@@ -280,16 +301,6 @@ section:nth-child(even) {
 }
 
 .wavy {
-  /* --mask: radial-gradient(
-        88.68px at 50% calc(100% - 122.2px),
-        #000 99%,
-        #0000 101%
-      )
-      calc(50% - 94px) 0/188px 100%,
-    radial-gradient(88.68px at 50% calc(100% + 75.2px), #0000 99%, #000 101%)
-      50% calc(100% - 47px) / 188px 100% repeat-x;
-  -webkit-mask: var(--mask);
-  mask: var(--mask); */
   --mask: radial-gradient(
         88.68px at 50% calc(0% + 122.2px),
         #000 99%,
@@ -301,7 +312,7 @@ section:nth-child(even) {
 
   -webkit-mask: var(--mask);
   mask: var(--mask);
-  margin-top: -61px;
+  margin-top: -62px;
 }
 
 /* header */
@@ -382,17 +393,17 @@ header .links .bars {
   background-color: var(--main-color-light);
 }
 
-.open .bars :first-child {
+.open .bars span:first-child {
   transform: translateY(calc(3px + 5px)) rotate(45deg);
   /* bar height + gap */
 }
 
-.open .bars :nth-child(2) {
+.open .bars span:nth-child(2) {
   opacity: 0;
   transform: translateX(-10px);
 }
 
-.open .bars :last-child {
+.open .bars span:last-child {
   transform: translateY(calc(-3px - 5px)) rotate(-45deg);
 }
 
@@ -539,11 +550,7 @@ header nav .main-btn {
 }
 
 @media (max-width: 767px) {
-  .landing .greeing {
-    margin-bottom: 30px;
-  }
-
-  .landing .greeing span {
+  .landing .greeting span {
     margin-top: 15px;
     line-height: 1.1;
   }
@@ -629,9 +636,7 @@ header nav .main-btn {
 }
 
 .projects .card img {
-  display: block;
   width: 120px;
-  max-width: 100%;
   margin: 0 auto;
   transition: var(--main-transition);
 }
