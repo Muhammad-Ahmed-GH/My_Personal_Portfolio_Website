@@ -11,12 +11,12 @@ html[lang="ar"] {
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
+  font-family: "Rubik", sans-serif;
 }
 
 img,
@@ -701,14 +701,10 @@ header nav .main-btn {
 }
 
 @media (prefers-color-scheme: dark) {
-  .projects .card .github-repo {
-    background-color: white;
-    color: black;
-  }
-
   .projects .card .github-repo:hover {
-    background-color: black;
+    background-color: #181725;
     color: white;
+    border-color: transparent;
   }
 }
 
