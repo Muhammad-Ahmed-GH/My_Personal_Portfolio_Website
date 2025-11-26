@@ -1,75 +1,68 @@
-# Muhammad Ahmed | Portfolio Website
+# Muhammad Ahmed — Portfolio Website
 
-A modern, responsive personal portfolio to showcase projects, skills, and contact details. Built with HTML, CSS, and a minimal amount of JavaScript.
+A clean, responsive personal portfolio built with plain HTML, CSS, and minimal JavaScript to showcase projects, skills, and contact information.
 
-## Features
+Live demo: https://muhammad-ahmed-tech.web.app
 
-- Responsive layout across devices
-- Automatic dark mode based on system preference
-- Smooth-scrolling navigation
-- Projects gallery with images and external links
-- Skills and future skills sections
-- Social media and contact links
+## Overview
 
-## Demo
+This repository contains the source for a portfolio website intended to present my projects, technical skills, and contact details in a lightweight, accessible format. The site works without build tools or frameworks and is optimized for quick deployment to static hosts.
 
-[View Live Demo](https://muhammad-ahmed-tech.web.app)
+## Features & Content
+
+- Responsive layout for desktop and mobile
+- System-based dark mode support
+- Project gallery with links to source and live demos
+- Skills and "next to learn" lists
+- Contact section with email and phone links
 
 ## Tech Stack
 
-- **HTML**
-- **CSS**
-- **JavaScript** (no frameworks, no build tools)
+- HTML
+- CSS
+- JavaScript
+
+External icons and fonts are loaded via CDNs (Font Awesome, Bootstrap Icons, Devicon, Google Fonts).
 
 ## Getting Started
 
-1. Download or clone the repository.
-2. Open `index.html` in your browser.
+Clone the repository and open the site locally:
 
-No build steps or dependencies required.
+1. Clone:
 
-## Folder Structure
+   ```bash
+   git clone https://github.com/muhammad-ahmed-gh/my-personal-portfolio-website.git
+   ```
+
+2. Open the site:
+
+   Open `index.html` in a browser (no build step required).
+
+Or deploy the directory to any static host (GitHub Pages, Firebase Hosting, Netlify, Vercel, etc.).
+
+## Project Structure
 
 ```
+root/
 ├── index.html
-├── style.css
-├── script.js
-├── imgs/
-│ ├── bank.png
-│ ├── favicon.ico
-│ ├── hospital-building.png
-│ ├── male-student.png
-│ ├── miscellanous.png
-│ ├── puzzle.png
-│ ├── school.png
-│ ├── template.png
-│ └── web-link.png
+├── css/
+│   ├── main.css
+│   └── normalize.css
+├── main.js
+├── images/
 └── README.md
 ```
 
-## Customization
+## Contributing
 
-- Update `index.html` to modify projects, skills, and contact info.
-- Replace assets in `imgs/` as needed.
-- Tweak styles in `style.css`.
-- `script.js` initializes theme based on system preference; you can extend it to add a manual toggle if desired.
-
-## Notes
-
-- Icons are served via CDNs (Font Awesome, Bootstrap Icons, Devicon); an internet connection is required for them to load.
-- Fonts are loaded from Google Fonts.
-
-## Credits
-
-- [Font Awesome](https://fontawesome.com/)
-- [Bootstrap Icons](https://icons.getbootstrap.com/)
-- [Devicon](https://devicon.dev/)
-- Fonts from [Google Fonts](https://fonts.google.com/)
+Issues and pull requests are welcome. For small fixes (typos, content updates, styling tweaks), open a PR against the repository. For larger changes, open an issue first to discuss the proposed work.
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is provided under the MIT License. See LICENSE for details.
 
 ---
 
 **Made with ❤️ by Muhammad Ahmed**
+- Email: m.ahmed2363@nu.edu.eg / muhammad.ahmed.connect@gmail.com  
+- LinkedIn: [Muhammad Ahmed](https://www.linkedin.com/in/muhammad-ahmed-nu)
