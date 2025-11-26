@@ -192,6 +192,7 @@ section:nth-child(even) {
   text-align: center;
   font-size: 2.6em;
   font-family: "Rufina", serif;
+  text-transform: capitalize;
 }
 
 .cards {
@@ -337,7 +338,6 @@ header .container {
 
 header .logo {
   color: var(--main-color);
-  text-decoration: none;
   font-weight: 600;
   font-size: 1.8em;
   text-transform: uppercase;
@@ -352,6 +352,11 @@ header .logo:hover {
   header .logo {
     font-size: 1.5em;
   }
+}
+
+header .logo a {
+  color: inherit;
+  text-decoration: none;
 }
 
 header nav {
