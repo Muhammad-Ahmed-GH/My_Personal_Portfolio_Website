@@ -2,7 +2,7 @@
 
 A clean, responsive personal portfolio built with plain HTML, CSS, and minimal JavaScript to showcase projects, skills, and contact information.
 
-Live demo: https://muhammad-ahmed-tech.web.app
+Live demo: [Visit Now!](https://muhammad-ahmed-tech.web.app)
 
 ## Overview
 
@@ -42,7 +42,7 @@ Or deploy the directory to any static host (GitHub Pages, Firebase Hosting, Netl
 
 ## Project Structure
 
-```
+```bash
 root/
 ├── index.html
 ├── css/
@@ -61,8 +61,11 @@ Issues and pull requests are welcome. For small fixes (typos, content updates, s
 
 This project is provided under the MIT License. See LICENSE for details.
 
+## Contact
+
+- Email: [m.ahmed2363@nu.edu.eg](m.ahmed2363@nu.edu.eg) / [muhammad.ahmed.connect@gmail.com](muhammad.ahmed.connect@gmail.com)
+- LinkedIn: [Muhammad Ahmed](https://www.linkedin.com/in/muhammad-ahmed-nu)
+
 ---
 
-**Made with ❤️ by Muhammad Ahmed**
-- Email: m.ahmed2363@nu.edu.eg / muhammad.ahmed.connect@gmail.com
-- LinkedIn: [Muhammad Ahmed](https://www.linkedin.com/in/muhammad-ahmed-nu)
+Made with ❤️ by **Muhammad Ahmed**
