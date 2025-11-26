@@ -64,5 +64,5 @@ This project is provided under the MIT License. See LICENSE for details.
 ---
 
 **Made with ❤️ by Muhammad Ahmed**
-- Email: m.ahmed2363@nu.edu.eg / muhammad.ahmed.connect@gmail.com  
+- Email: m.ahmed2363@nu.edu.eg / muhammad.ahmed.connect@gmail.com
 - LinkedIn: [Muhammad Ahmed](https://www.linkedin.com/in/muhammad-ahmed-nu)
