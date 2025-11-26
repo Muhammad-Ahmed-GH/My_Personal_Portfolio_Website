@@ -81,6 +81,7 @@ body {
   --section-padding: 120px;
   --header-height: 100px;
   --scroll-btn-width: 50px;
+  --border-radius: 5px;
 
   /* time */
   --main-transition: 0.3s;
@@ -203,7 +204,7 @@ section:nth-child(even) {
   max-width: 100%;
   padding: 55px 20px;
   border: 1px solid var(--card-border-color);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   text-align: center;
   background-color: var(--card-background-color);
   transition: var(--main-transition);
@@ -246,7 +247,7 @@ section:nth-child(even) {
 .alt-btn {
   padding: 18px 0;
   width: 200px;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   position: relative;
   z-index: 0;
   font-weight: 500;
