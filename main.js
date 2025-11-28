@@ -28,7 +28,9 @@ let setScrollBtn = function () {
 };
 
 // loading content
-let loadNavBar = function () {
+
+// loading nav links and resume links
+let loadLinks = function () {
   fetch("/data/nav.json")
     .then((response) => response.json())
     .then((data) => {
@@ -44,10 +46,34 @@ let loadNavBar = function () {
       });
 
       // set resume button
-      let resumeBtn = document.querySelector("header .main-btn");
-      resumeBtn.setAttribute("href", data.resumeUrl);
+      let resumeBtns = document.querySelectorAll(".resume-link");
+      resumeBtns.forEach(btn => btn.setAttribute("href", data.resumeUrl));
     });
 };
+
+let loadInfo = function() {
+  fetch("/data/info.json")
+  .then(response => response.json())
+  .then(infos => {
+    let cards = document.querySelector(".about-me .cards")
+    infos.forEach(info => {
+      let card  = document.createElement("div");
+      card.className = "card";
+
+      let icon = document.createElement("i");
+      icon.className = `icon ${info.icon}`;
+
+      let title = document.createElement("h3");
+      title.textContent = info.title;
+
+      let desc = document.createElement("p");
+      desc.textContent = info.description;
+
+      card.append(icon, title, desc);
+      cards.appendChild(card);
+    });
+  });
+}
 
 let addSkill = function (skill) {
   let skillsContent = document.querySelectorAll(".skills .cards")[0];
@@ -210,7 +236,8 @@ let loadContacts = function () {
 };
 
 let loadContent = function () {
-  loadNavBar();
+  loadLinks();
+  loadInfo();
   loadSkills();
   loadFutureSkills();
   loadProjects();
