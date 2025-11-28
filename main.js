@@ -28,6 +28,71 @@ let setScrollBtn = function () {
 };
 
 // loading content
+let loadNavBar = function () {
+  fetch("/data/nav.json")
+    .then((response) => response.json())
+    .then((data) => {
+      let linkList = document.querySelector("header ul");
+      data.navLinks.forEach(navLink => {
+        let li = document.createElement("li");
+        let link = document.createElement("a");
+        link.setAttribute("href", navLink.href);
+        link.textContent = navLink.title;
+
+        li.appendChild(link);
+        linkList.appendChild(li);
+      });
+
+      // set resume button
+      let resumeBtn = document.querySelector("header .main-btn");
+      resumeBtn.setAttribute("href", data.resumeUrl);
+    });
+};
+
+let addSkill = function (skill) {
+  let skillsContent = document.querySelectorAll(".skills .cards")[0];
+  let skillElement = document.createElement("div");
+  skillElement.className = "card";
+
+  const icon = document.createElement("i");
+  icon.className = `icon ${skill.icon}`;
+
+  const title = document.createElement("h3");
+  title.className = "title";
+  title.textContent = skill.name;
+
+  skillElement.append(icon, title);
+  skillsContent.appendChild(skillElement);
+};
+
+let loadSkills = function () {
+  fetch("/data/skills.json")
+    .then((response) => response.json())
+    .then((skills) => skills.forEach(addSkill));
+};
+
+let addFutureSkill = function (futureSkill) {
+  let futureSkillsContent = document.querySelectorAll(".skills .cards")[1];
+  let futureSkillElement = document.createElement("div");
+  futureSkillElement.className = "card";
+
+  const icon = document.createElement("i");
+  icon.className = `icon ${futureSkill.icon}`;
+
+  const title = document.createElement("h3");
+  title.className = "title";
+  title.textContent = futureSkill.name;
+
+  futureSkillElement.append(icon, title);
+  futureSkillsContent.appendChild(futureSkillElement);
+};
+
+let loadFutureSkills = function () {
+  fetch("/data/future-skills.json")
+    .then((response) => response.json())
+    .then((skills) => skills.forEach(addFutureSkill));
+};
+
 let addProject = function (project) {
   let projectsContent = document.querySelector(".projects .cards");
   let projectElement = document.createElement("div");
@@ -91,50 +156,6 @@ let loadProjects = function () {
     });
 };
 
-let addSkill = function (skill) {
-  let skillsContent = document.querySelectorAll(".skills .cards")[0];
-  let skillElement = document.createElement("div");
-  skillElement.className = "card";
-
-  const icon = document.createElement("i");
-  icon.className = `icon ${skill.icon}`;
-
-  const title = document.createElement("h3");
-  title.className = "title";
-  title.textContent = skill.name;
-
-  skillElement.append(icon, title);
-  skillsContent.appendChild(skillElement);
-};
-
-let loadSkills = function () {
-  fetch("/data/skills.json")
-    .then((response) => response.json())
-    .then((skills) => skills.forEach(addSkill));
-};
-
-let addFutureSkill = function (futureSkill) {
-  let futureSkillsContent = document.querySelectorAll(".skills .cards")[1];
-  let futureSkillElement = document.createElement("div");
-  futureSkillElement.className = "card";
-
-  const icon = document.createElement("i");
-  icon.className = `icon ${futureSkill.icon}`;
-
-  const title = document.createElement("h3");
-  title.className = "title";
-  title.textContent = futureSkill.name;
-
-  futureSkillElement.append(icon, title);
-  futureSkillsContent.appendChild(futureSkillElement);
-};
-
-let loadFutureSkills = function () {
-  fetch("/data/future-skills.json")
-    .then((response) => response.json())
-    .then((skills) => skills.forEach(addFutureSkill));
-};
-
 let addContacts = function (contacts) {
   // add emails
   let emailsList = document.querySelector(".contact .emails ul");
@@ -189,9 +210,10 @@ let loadContacts = function () {
 };
 
 let loadContent = function () {
-  loadProjects();
+  loadNavBar();
   loadSkills();
   loadFutureSkills();
+  loadProjects();
   loadContacts();
 };
 
