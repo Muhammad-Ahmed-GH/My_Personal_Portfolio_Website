@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "HTML",
+    "icon": "fa-solid fa-code",
+    "category": "frontend"
+  },
+  {
+    "id": 2,
+    "name": "CSS",
+    "icon": "fa-solid fa-asterisk",
+    "category": "frontend"
+  },
+  {
+    "id": 3,
+    "name": "Javascript",
+    "icon": "fa-brands fa-square-js",
+    "category": "frontend"
+  },
+  {
+    "id": 4,
+    "name": "Python",
+    "icon": "devicon-python-plain",
+    "category": "backend"
+  },
+  {
+    "id": 5,
+    "name": "Java",
+    "icon": "devicon-java-plain",
+    "category": "backend"
+  },
+  {
+    "id": 6,
+    "name": "C++",
+    "icon": "devicon-cplusplus-plain",
+    "category": "backend"
+  },
+  {
+    "id": 7,
+    "name": "C",
+    "icon": "devicon-c-plain",
+    "category": "backend"
+  },
+  {
+    "id": 8,
+    "name": "Git/GitHub",
+    "icon": "fa-brands fa-git-alt",
+    "category": "tools"
+  }
+]

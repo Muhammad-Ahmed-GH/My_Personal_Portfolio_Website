@@ -1,0 +1,26 @@
+{
+  "emails": ["m.ahmed2363@nu.edu.eg", "muhammad.ahmed.connect@gmail.com"],
+  "phones": ["+201146771613"],
+  "social": [
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/muhammad-ahmed-nu",
+      "icon": "fa-brands fa-linkedin"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/muhammad-ahmed-gh",
+      "icon": "fa-brands fa-github"
+    },
+    {
+      "name": "facebook",
+      "url": "https://www.facebook.com/mohammed.elrassam.58",
+      "icon": "fa-brands fa-square-facebook"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/MAhmed2363",
+      "icon": "fa-brands fa-telegram"
+    }
+  ]
+}

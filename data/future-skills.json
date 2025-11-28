@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Bootstrap",
+    "icon": "fa-brands fa-bootstrap",
+    "category": "frontend",
+    "priority": "high"
+  },
+  {
+    "id": 2,
+    "name": "Sass",
+    "icon": "devicon-sass-original",
+    "category": "frontend",
+    "priority": "high"
+  },
+  {
+    "id": 3,
+    "name": "APIs",
+    "icon": "fa-solid fa-paper-plane",
+    "category": "frontend",
+    "priority": "high"
+  },
+  {
+    "id": 4,
+    "name": "TypeScript",
+    "icon": "devicon-typescript-plain",
+    "category": "frontend",
+    "priority": "medium"
+  },
+  {
+    "id": 5,
+    "name": "React",
+    "icon": "fa-brands fa-react",
+    "category": "frontend",
+    "priority": "high"
+  },
+  {
+    "id": 6,
+    "name": "Vite",
+    "icon": "devicon-vitejs-plain",
+    "category": "tools",
+    "priority": "medium"
+  },
+  {
+    "id": 7,
+    "name": "Jest",
+    "icon": "devicon-jest-plain",
+    "category": "tools",
+    "priority": "medium"
+  },
+  {
+    "id": 8,
+    "name": "More",
+    "icon": "fa-solid fa-ellipsis",
+    "category": "other",
+    "priority": "low"
+  }
+]
