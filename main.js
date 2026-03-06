@@ -210,7 +210,7 @@ let addContacts = function (contacts) {
   contacts.emails.forEach((email) => {
     let li = document.createElement("li");
     let link = document.createElement("a");
-    link.setAttribute("href", email);
+    link.setAttribute("href", `mailto:${email}`);
     link.setAttribute("target", "_blank");
     link.setAttribute("rel", "noopener");
     link.textContent = email;
@@ -224,7 +224,7 @@ let addContacts = function (contacts) {
   contacts.phones.forEach((phone) => {
     let li = document.createElement("li");
     let link = document.createElement("a");
-    link.setAttribute("href", phone);
+    link.setAttribute("href", `tel:${phone}`);
     link.setAttribute("target", "_blank");
     link.setAttribute("rel", "noopener");
     link.textContent = phone;
