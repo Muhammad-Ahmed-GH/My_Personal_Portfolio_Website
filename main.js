@@ -98,7 +98,7 @@ let loadSkills = function () {
 };
 
 let addFutureSkill = function (futureSkill) {
-  let futureSkillsContent = document.querySelectorAll(".skills .cards")[1];
+  let futureSkillsContent = document.querySelectorAll(".skills .cards")[2];
   let futureSkillElement = document.createElement("div");
   futureSkillElement.className = "card";
 
@@ -117,6 +117,28 @@ let loadFutureSkills = function () {
   fetch("/data/future-skills.json")
     .then((response) => response.json())
     .then((skills) => skills.forEach(addFutureSkill));
+};
+
+let addExtraSkill = function (futureSkill) {
+  let futureSkillsContent = document.querySelectorAll(".skills .cards")[1];
+  let futureSkillElement = document.createElement("div");
+  futureSkillElement.className = "card";
+
+  const icon = document.createElement("i");
+  icon.className = `icon ${futureSkill.icon}`;
+
+  const title = document.createElement("h3");
+  title.className = "title";
+  title.textContent = futureSkill.name;
+
+  futureSkillElement.append(icon, title);
+  futureSkillsContent.appendChild(futureSkillElement);
+};
+
+let loadExtraSkills = function () {
+  fetch("/data/extra-skills.json")
+    .then((response) => response.json())
+    .then((skills) => skills.forEach(addExtraSkill));
 };
 
 let addProject = function (project) {
@@ -239,6 +261,7 @@ let loadContent = function () {
   loadLinks();
   loadInfo();
   loadSkills();
+  loadExtraSkills();
   loadFutureSkills();
   loadProjects();
   loadContacts();

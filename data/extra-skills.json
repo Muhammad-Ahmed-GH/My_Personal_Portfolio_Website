@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Python",
+    "icon": "fa-brands fa-python",
+    "category": "frontend"
+  },
+  {
+    "id": 2,
+    "name": "Java",
+    "icon": "fa-brands fa-java",
+    "category": "frontend"
+  },
+  {
+    "id": 3,
+    "name": "C++",
+    "icon": "devicon-cplusplus-plain",
+    "category": "frontend"
+  },
+  {
+    "id": 4,
+    "name": "C",
+    "icon": "devicon-c-original",
+    "category": "frontend"
+  }
+]
