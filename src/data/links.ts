@@ -1,0 +1,9 @@
+export const resumeLink =
+  "https://drive.google.com/file/d/1GMqsPpJvMJhq6kkEH7Y21Cm6YqXnPPBZ/view?usp=drive_link";
+
+export const navLinks = [
+  { title: "About Me", href: "#about-me" },
+  { title: "Skills", href: "#skills" },
+  { title: "Projects", href: "#projects" },
+  { title: "Contact", href: "#contact" },
+];
