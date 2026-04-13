@@ -5,7 +5,7 @@
     @apply font-rubik;
   }
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth leading-[1.15];
   }
   html[lang="ar"] {
     @apply [direction:rtl];
@@ -130,6 +130,20 @@
   font-family: Rubik;
   src: url("./assets/fonts/Rubik/static/Rubik-MediumItalic.ttf") format("truetype");
   font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./assets/fonts/Rubik/static/Rubik-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./assets/fonts/Rubik/static/Rubik-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
   font-style: italic;
 }
 
