@@ -1,3 +1,9 @@
+import Landing from "./Landing";
+
 export default function Content() {
-  return <h1>Content</h1>;
+  return (
+    <>
+      <Landing />
+    </>
+  );
 }

@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <header className="w-full fixed z-[1000] bg-section shadow-[0_0_5px_var(--color-shadow)] ">
-      <div className="container mx-auto px-4 flex justify-between items-center h-header-h ">
+      <div className="container mx-auto px-4 2xl:max-w-[73rem] flex justify-between items-center h-header-h ">
         <h1 className="text-primary hover:text-primary-dark font-[600] md:text-[1.8em] text-[1.5rem] uppercase transition-colors duration-[var(--main-transition)] ">
           <a href="#main">Muhammad Ahmed</a>
         </h1>
