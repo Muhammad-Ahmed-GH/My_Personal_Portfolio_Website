@@ -2,25 +2,6 @@ import { resumeLink, socialMediaLinks } from "../data/links";
 
 export default function Landing() {
   return (
-    /*
-      section.landing#main
-        .container
-          p.greeting
-            Hey there, thanks for passing by
-            <span>I'm Muhammad<br />Frontend Developer</span>
-          
-          p.desc
-            I'm an aspiring web developer, and a computer science student
-          
-          .landing-btns
-            a.main-btn href="#projects"
-              View my work
-            
-            a.alt-btn.resume-link href="#" target="_blank" rel="noopener"
-              My resume
-          
-          .social-icons
-     */
     <section
       id="main"
       className="text-text text-center text-[14px] md:text-[1rem] md:text-start bg-section-alt"
