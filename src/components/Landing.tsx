@@ -25,8 +25,7 @@ export default function Landing() {
       id="main"
       className="text-text text-center text-[14px] md:text-[1rem] md:text-start bg-section-alt"
     >
-      <div className="dummy h-header-h"></div>
-      <div className="container px-4 mx-auto 2xl:max-w-[73rem] h-[calc(100vh-var(--spacing-header-h))] flex flex-col justify-center">
+      <div className="container px-4 mx-auto 2xl:max-w-[73rem] pt-header-h min-h-screen flex flex-col justify-center">
         <p className="text-primary text-[1.1em] font-light uppercase sm:text-[1.2em]">
           Hey there, thanks for passing by
           <span className="block m-[20px_0_30px] text-heading [text-transform:none] font-rufina font-bold text-[2.3em] mt-[15px] leading-[1.1] md:mt-[20px] md:leading-[inherit] sm:text-[3em]">
