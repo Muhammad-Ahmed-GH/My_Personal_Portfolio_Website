@@ -1,4 +1,7 @@
 import { resumeLink, socialMediaLinks } from "../data/links";
+import AltButton from "./UI/AltButton";
+import Container from "./UI/Container";
+import MainButton from "./UI/MainButton";
 
 export default function Landing() {
   return (
@@ -6,7 +9,7 @@ export default function Landing() {
       id="main"
       className="text-text text-center text-[14px] md:text-[1rem] md:text-start bg-section-alt"
     >
-      <div className="container px-4 mx-auto 2xl:max-w-[73rem] pt-header-h min-h-screen flex flex-col justify-center">
+      <Container className="container px-4 mx-auto 2xl:max-w-[73rem] pt-header-h min-h-screen flex flex-col justify-center">
         <p className="text-primary text-[1.1em] font-light uppercase sm:text-[1.2em]">
           Hey there, thanks for passing by
           <span className="block m-[20px_0_30px] text-heading [text-transform:none] font-rufina font-bold text-[2.3em] mt-[15px] leading-[1.1] md:mt-[20px] md:leading-[inherit] sm:text-[3em]">
@@ -21,20 +24,8 @@ export default function Landing() {
         </p>
 
         <div className="flex flex-col items-center gap-[20px] mb-[20px] md:flex-row">
-          <a
-            href="#projects"
-            className="rounded-[var(--spacing-border-r)] w-[200px] z-0 font-medium text-center relative capitalize text-white p-[18px_0] bg-primary overflow-hidden before:absolute before:top-0 before:bottom-0 before:left-0 before:w-0 before:bg-primary-dark before:-z-1 hover:before:w-full before:transition-[width] before:duration-700 before:ease-[cubic-bezier(0.47,1.8,0.17,0.53)]"
-          >
-            View my work
-          </a>
-          <a
-            href={resumeLink}
-            target="_blank"
-            rel="noopener"
-            className="rounded-[var(--spacing-border-r)] w-[200px] z-0 font-medium text-center relative capitalize text-text-light p-[18px_0] bg-none overflow-hidden transition-colors duration-700 border-1 border-primary hover:text-white before:absolute before:top-0 before:left-0 before:right-0 before:h-0 before:bg-primary before:-z-1 hover:before:h-full before:transition-[height] before:duration-700 before:ease-[cubic-bezier(0.47,1.8,0.17,0.53)]"
-          >
-            My resume
-          </a>
+          <MainButton href="#projects">View my work</MainButton>
+          <AltButton href={resumeLink} target="_blank" rel="noopener">My resume</AltButton>
         </div>
 
         <div className="flex justify-center md:justify-start">
@@ -51,7 +42,7 @@ export default function Landing() {
             </a>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
