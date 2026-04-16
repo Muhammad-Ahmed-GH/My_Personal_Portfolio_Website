@@ -1,0 +1,202 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    @apply font-rubik;
+  }
+  html {
+    @apply scroll-smooth leading-[1.15];
+  }
+  html[lang="ar"] {
+    @apply [direction:rtl] text-[14px] md:text-[15px] lg:text-[16px];
+  }
+  body {
+    @apply bg-bg text-text selection:bg-primary selection:text-white;
+  }
+  a:focus {
+    @apply outline-none ring-2 ring-primary rounded-[var(--spacing-border-r)]
+  }
+  section {
+    @apply nth-[even]:bg-section-alt nth-[odd]:bg-section py-section-p min-h-screen text-text;
+  }
+  .container {
+    @apply px-4 mx-auto 2xl:max-w-[73rem];
+  }
+}
+
+@theme {
+  /* Typography */
+  --font-rubik: "Rubik", system-ui, sans-serif;
+  --font-rufina: "Rufina", "Times New Roman", serif;
+
+  /* Layout */
+  --spacing-section-p: 120px;
+  --spacing-header-h: 100px;
+  --spacing-border-r: 5px;
+  --spacing-card-w: 300px;
+  --scroll-btn-w: 50px;
+
+  --main-transition: 0.3s;
+
+  /* Colors - Light */
+  --color-bg: #ffffff;
+  --color-section: #fafbff;
+  --color-section-alt: #f0f4ff;
+
+  --color-card: #ffffff;
+  --color-card-hover: #f8faff;
+  --color-card-border: #e2e8f5;
+
+  --color-header-link: #ffffff;
+  --color-header-link-hover: #f5f8ff;
+
+  --color-text: #1a1e2e;
+  --color-text-light: #555c7b;
+  --color-text-lightest: #777d9a;
+  --color-heading: #0f1b4d;
+
+  /* Brand */
+  --color-blue: #3b82f6;
+  --color-blue-light: #60a5fa;
+  --color-blue-dark: #2563eb;
+
+  --color-primary: var(--color-blue);
+  --color-primary-light: var(--color-blue-light);
+  --color-primary-dark: var(--color-blue-dark);
+
+  --color-primary-transparent: #3b82f618;
+
+  --color-shadow: #0000000d;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0d0f1a;
+    --color-section: #11131f;
+    --color-section-alt: #161925;
+
+    --color-card: #1a1e2e;
+    --color-card-hover: #222738;
+    --color-card-border: #2d3754;
+
+    --color-header-link: #1e2333;
+    --color-header-link-hover: #262b40;
+
+    --color-text: #e0e2ed;
+    --color-text-light: #a8b0d3;
+    --color-text-lightest: #8892b0;
+    --color-heading: #c3cfff;
+
+    --color-primary: #529af5;
+    --color-primary-light: #6ab7ff;
+    --color-primary-dark: #3b82f6;
+
+    --color-primary-transparent: #529af533;
+
+    --color-shadow: #0000004d;
+  }
+
+  section:nth-child(odd) .cards .card {
+    --color-card: #1e2235;
+    --color-card-hover: #252b44;
+  }
+
+  section:nth-child(even) .cards .card {
+    --color-card: #1a1e2e;
+    --color-card-hover: #222738;
+  }
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  :root {
+    --spacing-header-h: 55px;
+  }
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./assets/fonts/Rubik/static/Rubik-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./assets/fonts/Rubik/static/Rubik-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./assets/fonts/Rubik/static/Rubik-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./assets/fonts/Rubik/static/Rubik-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./assets/fonts/Rubik/static/Rubik-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./assets/fonts/Rubik/static/Rubik-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./assets/fonts/Rubik/static/Rubik-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./assets/fonts/Rubik/static/Rubik-BoldItalic.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./assets/fonts/Rubik/static/Rubik-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./assets/fonts/Rubik/static/Rubik-LightItalic.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Rufina;
+  src: url("./assets/fonts/Rufina/Rufina-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rufina;
+  src: url("./assets/fonts/Rufina/Rufina-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
