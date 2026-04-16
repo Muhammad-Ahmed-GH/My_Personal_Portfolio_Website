@@ -7,7 +7,7 @@ export default function Landing() {
   return (
     <section
       id="main"
-      className="text-text text-center text-[14px] md:text-[1rem] md:text-start bg-section-alt"
+      className="p-0 min-h-auto text-center text-[14px] md:text-[1rem] md:text-start"
     >
       <Container className="container px-4 mx-auto 2xl:max-w-[73rem] pt-header-h min-h-screen flex flex-col justify-center">
         <p className="text-primary text-[1.1em] font-light uppercase sm:text-[1.2em]">

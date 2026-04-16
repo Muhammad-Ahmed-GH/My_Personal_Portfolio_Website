@@ -16,6 +16,9 @@
   a:focus {
     @apply outline-none ring-2 ring-primary rounded-[var(--spacing-border-r)]
   }
+  section {
+    @apply nth-[even]:bg-section-alt nth-[odd]:bg-section py-section-p min-h-screen text-text;
+  }
 }
 
 @theme {
