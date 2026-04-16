@@ -115,5 +115,8 @@ export const pageData = {
       },
     ],
   },
-  contact: {},
+  contact: {
+    emails: ["m.ahmed2363@nu.edu.eg", "muhammad.ahmed.connect@gmail.com"],
+    phones: ["+201146771613"],
+  },
 };
