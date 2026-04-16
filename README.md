@@ -1,12 +1,12 @@
 # Muhammad Ahmed — Portfolio Website
 
-A clean, responsive personal portfolio built with plain HTML, CSS, and minimal JavaScript to showcase projects, skills, and contact information.
+A clean, responsive personal portfolio built with React, Tailwind CSS, and Vite to showcase projects, skills, and contact information.
 
 Live demo: [Visit Now!](https://muhammad-ahmed-tech.web.app)
 
 ## Overview
 
-This repository contains the source for a portfolio website intended to present my projects, technical skills, and contact details in a lightweight, accessible format. The site works without build tools or frameworks and is optimized for quick deployment to static hosts.
+This repository contains the source for a modern portfolio website showcasing projects, technical skills, and contact details. Built with React for component-based architecture, Tailwind CSS for utility-first styling, and Vite for lightning-fast development and optimized production builds.
 
 ## Features & Content
 
@@ -15,42 +15,94 @@ This repository contains the source for a portfolio website intended to present 
 - Project gallery with links to source and live demos
 - Skills and "next to learn" lists
 - Contact section with email and phone links
+- Component-based architecture
+- Optimized build with Vite
 
 ## Tech Stack
 
-- HTML
-- CSS
-- JavaScript
-
-External icons and fonts are loaded via CDNs (Font Awesome, Bootstrap Icons, Devicon, Google Fonts).
+- **React** — UI framework
+- **Tailwind CSS** — Utility-first CSS framework
+- **Vite** — Next generation build tool and dev server
+- **TypeScript** — Type safety
 
 ## Getting Started
 
-Clone the repository and open the site locally:
+### Prerequisites
 
-1. Clone:
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/muhammad-ahmed-gh/my-personal-portfolio-website.git
+   cd my-personal-portfolio-website
    ```
 
-2. Open the site:
+2. Install dependencies:
 
-   Open `index.html` in a browser (no build step required).
+   ```bash
+   npm install
+   ```
 
-Or deploy the directory to any static host (GitHub Pages, Firebase Hosting, Netlify, Vercel, etc.).
+### Development
+
+Run the development server with hot module replacement:
+
+```bash
+npm run dev
+```
+
+The site will be available at `http://localhost:5173`
+
+### Build for Production
+
+Create an optimized production build:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+### Deployment
+
+Deploy to any static host (Firebase Hosting, Netlify, Vercel, GitHub Pages, etc.). The `build` directory contains the production-ready files.
 
 ## Project Structure
 
 ```bash
-root/
-├── index.html
-├── css/
-│   ├── main.css
-│   └── normalize.css
-├── main.js
-├── images/
-└── README.md
+src/
+├── components/
+│   ├── AboutMe.tsx
+│   ├── Contact.tsx
+│   ├── Landing.tsx
+│   ├── Projects.tsx
+│   ├── Skills.tsx
+│   ├── UI/
+│   │   ├── Button components
+│   │   └── Layout components
+│   └── Card components
+├── data/
+│   ├── links.ts
+│   └── pageData.ts
+├── assets/
+│   ├── fonts/
+│   └── images/
+├── App.tsx
+├── main.tsx
+└── index.css
+public/
+├── package.json
+├── vite.config.ts
+├── tsconfig.json
+└── eslint.config.js
 ```
 
 ## Contributing
