@@ -19,6 +19,9 @@
   section {
     @apply nth-[even]:bg-section-alt nth-[odd]:bg-section py-section-p min-h-screen text-text;
   }
+  .container {
+    @apply px-4 mx-auto 2xl:max-w-[73rem];
+  }
 }
 
 @theme {
@@ -29,8 +32,9 @@
   /* Layout */
   --spacing-section-p: 120px;
   --spacing-header-h: 100px;
-  --scroll-btn-w: 50px;
   --spacing-border-r: 5px;
+  --spacing-card-w: 300px;
+  --scroll-btn-w: 50px;
 
   --main-transition: 0.3s;
 

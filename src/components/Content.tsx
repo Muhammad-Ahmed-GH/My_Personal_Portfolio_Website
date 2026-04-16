@@ -1,6 +1,7 @@
 import AboutMe from "./AboutMe";
 import Contact from "./Contact";
 import Landing from "./Landing";
+import Projects from "./Projects";
 import Skills from "./Skills";
 
 export default function Content() {
@@ -9,6 +10,7 @@ export default function Content() {
       <Landing />
       <AboutMe />
       <Skills />
+      <Projects />
       <Contact />
     </>
   );

@@ -1,5 +1,6 @@
 import { pageData } from "../data/pageData";
 import ContactCard from "./ContactCard";
+import Cards from "./UI/Cards";
 import Container from "./UI/Container";
 import SectionTitle from "./UI/SectionTitle";
 
@@ -10,10 +11,10 @@ export default function Contact() {
     <section id="contact">
       <Container>
         <SectionTitle>Contact Me!</SectionTitle>
-        <div className="flex flex-wrap justify-center gap-[50px]">
+        <Cards>
           <ContactCard type="email" items={contactData.emails} />
           <ContactCard type="phone" items={contactData.phones} />
-        </div>
+        </Cards>
       </Container>
     </section>
   );

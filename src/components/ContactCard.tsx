@@ -8,7 +8,7 @@ export default function ContactCard(props: Props) {
   const prefix = props.type === "email" ? "mailto:" : "tel:";
 
   return (
-    <div className="w-full max-w-full p-[55px_20px] border-1 border-card-border rounded-[var(--spacing-border-r)] text-center bg-card transition-[background_transform] duration-[var(--main-transition)] cursor-pointer sm:w-[350px] hover:transform-[translateY(-5px)] hover:bg-card-hover">
+    <div className="max-w-full w-card-w p-[55px_20px] border-1 border-card-border rounded-[var(--spacing-border-r)] text-center bg-card transition-[background_transform] duration-[var(--main-transition)] cursor-pointer hover:transform-[translateY(-5px)] hover:bg-card-hover">
       <div className="flex justify-center items-center m-[0_auto_30px] w-[120px] max-w-full h-[120px] rounded-full text-primary bg-primary-transparent text-[4em]">
         <i className={icon}></i>
       </div>

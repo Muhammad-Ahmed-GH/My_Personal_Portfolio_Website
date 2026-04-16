@@ -7,7 +7,7 @@ type Props = {
 export default function Cards({ className, children }: Props) {
   return (
     <div
-      className={`grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-[50px] ${className ?? ""}`}
+      className={`flex justify-center flex-wrap gap-[50px] ${className ?? ""}`}
     >
       {children}
     </div>
