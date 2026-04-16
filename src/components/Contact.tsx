@@ -8,7 +8,7 @@ export default function Contact() {
   const contactData = pageData.contact;
 
   return (
-    <section id="contact">
+    <section className="wavy" id="contact">
       <Container>
         <SectionTitle>Contact Me!</SectionTitle>
         <Cards>

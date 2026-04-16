@@ -3,7 +3,7 @@ import Container from "./UI/Container";
 
 export default function Footer() {
   return (
-    <div className="min-h-[100px] pt-section-p pb-[50px] text-text bg-section text-[1.15em] text-center sm:text-start">
+    <div className="wavy min-h-[100px] pt-section-p pb-[50px] text-text bg-section text-[1.15em] text-center sm:text-start">
       <Container className="flex flex-col justify-between items-center gap-[10px] sm:flex-row sm:gap-0 ">
         <p>
           Copyright {new Date().getFullYear()} @<strong>Muhammad Ahmed</strong>
