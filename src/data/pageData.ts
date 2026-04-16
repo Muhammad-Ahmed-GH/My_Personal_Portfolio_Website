@@ -144,17 +144,28 @@ export const pageData: PageData = {
   projects: [
     {
       id: 1,
-      title: "professional portfolio website",
-      icon: "fa-solid fa-globe",
-      techStack: ["HTML", "CSS", "JavaScript"],
+      title: "dritto browser extension",
+      icon: "fa-solid fa-puzzle-piece",
+      techStack: ["React", "TypeScript", "TailwindCSS"],
       status: "inProgress",
       links: {
         github:
-          "https://github.com/muhammad-ahmed-gh/my-personal-portfolio-website",
+          "https://github.com/muhammad-ahmed-gh/dritto",
       },
     },
     {
       id: 2,
+      title: "studo schedule generator",
+      icon: "fa-solid fa-calendar",
+      techStack: ["JavaScript", "CSS", "HTML", "Flask"],
+      status: "done",
+      links: {
+        github:
+          "https://github.com/muhammad-ahmed-gh/studo-schedule-generator",
+      },
+    },
+    {
+      id: 3,
       title: "my templates hub",
       icon: "fa-solid fa-palette",
       techStack: ["HTML", "CSS"],
@@ -165,7 +176,7 @@ export const pageData: PageData = {
       },
     },
     {
-      id: 3,
+      id: 4,
       title: "mini projects collection",
       icon: "fa-solid fa-puzzle-piece",
       techStack: ["HTML", "CSS", "JavaScript"],
@@ -176,7 +187,7 @@ export const pageData: PageData = {
       },
     },
     {
-      id: 4,
+      id: 5,
       title: "Dashboard | HTML & CSS template",
       icon: "fa-solid fa-paintbrush",
       techStack: ["HTML", "CSS"],
@@ -188,7 +199,7 @@ export const pageData: PageData = {
       },
     },
     {
-      id: 5,
+      id: 6,
       title: "Nexo | HTML & CSS template",
       icon: "fa-solid fa-paintbrush",
       techStack: ["HTML", "CSS"],
@@ -200,7 +211,7 @@ export const pageData: PageData = {
       },
     },
     {
-      id: 6,
+      id: 7,
       title: "Kasper | HTML & CSS template",
       icon: "fa-solid fa-paintbrush",
       techStack: ["HTML", "CSS"],
@@ -212,7 +223,7 @@ export const pageData: PageData = {
       },
     },
     {
-      id: 7,
+      id: 8,
       title: "Leon | HTML & CSS template",
       icon: "fa-solid fa-paintbrush",
       techStack: ["HTML", "CSS"],
@@ -221,61 +232,6 @@ export const pageData: PageData = {
         github:
           "https://github.com/muhammad-ahmed-gh/leon-html-css-template-1/",
         live: "https://muhammad-ahmed-gh.github.io/leon-html-css-template-1",
-      },
-    },
-    {
-      id: 8,
-      title: "students management system",
-      icon: "fa-solid fa-user-graduate",
-      techStack: ["Java"],
-      status: "done",
-      links: {
-        github:
-          "https://github.com/muhammad-ahmed-gh/student-record-management-system-java",
-      },
-    },
-    {
-      id: 9,
-      title: "bank management system",
-      icon: "fa-solid fa-coins",
-      techStack: ["C++"],
-      status: "done",
-      links: {
-        github:
-          "https://github.com/muhammad-ahmed-gh/bank-management-system-cpp",
-      },
-    },
-    {
-      id: 10,
-      title: "university management system",
-      icon: "fa-solid fa-address-book",
-      techStack: ["C++"],
-      status: "done",
-      links: {
-        github:
-          "https://github.com/muhammad-ahmed-gh/university-management-system-cpp",
-      },
-    },
-    {
-      id: 11,
-      title: "hospital management system",
-      icon: "fa-solid fa-heart",
-      techStack: ["C"],
-      status: "done",
-      links: {
-        github:
-          "https://github.com/muhammad-ahmed-gh/hospital-management-system-c",
-      },
-    },
-    {
-      id: 12,
-      title: "image matching game",
-      icon: "fa-solid fa-gamepad",
-      techStack: ["Python"],
-      status: "done",
-      links: {
-        github:
-          "https://github.com/muhammad-ahmed-gh/image-matching-game-python",
       },
     },
   ],
