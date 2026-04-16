@@ -146,7 +146,7 @@ export const pageData: PageData = {
       id: 1,
       title: "dritto browser extension",
       icon: "fa-solid fa-puzzle-piece",
-      techStack: ["React", "TypeScript", "TailwindCSS"],
+      techStack: ["React", "TypeScript", "TailwindCSS", "Vite"],
       status: "inProgress",
       links: {
         github:
@@ -155,6 +155,17 @@ export const pageData: PageData = {
     },
     {
       id: 2,
+      title: "flavorAI",
+      icon: "fa-solid fa-bowl-rice",
+      techStack: ["React", "TypeScript", "TailwindCSS", "Vite"],
+      status: "done",
+      links: {
+        github:
+          "https://github.com/muhammad-ahmed-gh/flavor-ai",
+      },
+    },
+    {
+      id: 3,
       title: "studo schedule generator",
       icon: "fa-solid fa-calendar",
       techStack: ["JavaScript", "CSS", "HTML", "Flask"],
@@ -165,7 +176,29 @@ export const pageData: PageData = {
       },
     },
     {
-      id: 3,
+      id: 4,
+      title: "tenzies game",
+      icon: "fa-solid fa-circle-question",
+      techStack: ["React", "TypeScript", "TailwindCSS", "Vite"],
+      status: "done",
+      links: {
+        github:
+          "https://github.com/muhammad-ahmed-gh/tenzies-game",
+      },
+    },
+    {
+      id: 5,
+      title: "meme generator",
+      icon: "fa-regular fa-face-grin-squint-tears",
+      techStack: ["React", "TailwindCSS", "Vite"],
+      status: "done",
+      links: {
+        github:
+          "https://github.com/muhammad-ahmed-gh/meme-generator",
+      },
+    },
+    {
+      id: 6,
       title: "my templates hub",
       icon: "fa-solid fa-palette",
       techStack: ["HTML", "CSS"],
@@ -176,7 +209,7 @@ export const pageData: PageData = {
       },
     },
     {
-      id: 4,
+      id: 7,
       title: "mini projects collection",
       icon: "fa-solid fa-puzzle-piece",
       techStack: ["HTML", "CSS", "JavaScript"],
@@ -187,7 +220,7 @@ export const pageData: PageData = {
       },
     },
     {
-      id: 5,
+      id: 8,
       title: "Dashboard | HTML & CSS template",
       icon: "fa-solid fa-paintbrush",
       techStack: ["HTML", "CSS"],
@@ -199,7 +232,7 @@ export const pageData: PageData = {
       },
     },
     {
-      id: 6,
+      id: 9,
       title: "Nexo | HTML & CSS template",
       icon: "fa-solid fa-paintbrush",
       techStack: ["HTML", "CSS"],
@@ -211,7 +244,7 @@ export const pageData: PageData = {
       },
     },
     {
-      id: 7,
+      id: 10,
       title: "Kasper | HTML & CSS template",
       icon: "fa-solid fa-paintbrush",
       techStack: ["HTML", "CSS"],
@@ -223,7 +256,7 @@ export const pageData: PageData = {
       },
     },
     {
-      id: 8,
+      id: 11,
       title: "Leon | HTML & CSS template",
       icon: "fa-solid fa-paintbrush",
       techStack: ["HTML", "CSS"],
