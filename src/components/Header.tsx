@@ -22,7 +22,7 @@ export default function Header() {
             />
             <HeaderLinks isMenuOpen={isMenuOpen} />
           </div>
-          <MainButton href={resumeLink} target="_blank" rel="noopener">
+          <MainButton className="hidden lg:inline" href={resumeLink} target="_blank" rel="noopener">
             View My Resume
           </MainButton>
         </nav>
