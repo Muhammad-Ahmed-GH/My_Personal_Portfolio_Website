@@ -7,7 +7,7 @@ import SectionTitle from "./UI/SectionTitle";
 
 export default function Skills() {
   return (
-    <section id="skills">
+    <section className="wavy" id="skills">
       <Container>
         <SectionTitle>Skills</SectionTitle>
         <SectionSubTitle>Languages</SectionSubTitle>

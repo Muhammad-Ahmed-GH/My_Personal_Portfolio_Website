@@ -8,8 +8,8 @@ export default function Projects() {
   const projectsData = pageData.projects;
 
   return (
-    <section id="projects">
-      <Container className="">
+    <section className="wavy" id="projects">
+      <Container>
         <SectionTitle>Projects</SectionTitle>
         <Cards>
           {projectsData.map((projectData) => (

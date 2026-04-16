@@ -14,13 +14,16 @@
     @apply bg-bg text-text selection:bg-primary selection:text-white;
   }
   a:focus {
-    @apply outline-none ring-2 ring-primary rounded-[var(--spacing-border-r)]
+    @apply outline-none ring-2 ring-primary rounded-[var(--spacing-border-r)];
   }
   section {
     @apply nth-[even]:bg-section-alt nth-[odd]:bg-section py-section-p min-h-screen text-text;
   }
   .container {
     @apply px-4 mx-auto 2xl:max-w-[73rem];
+  }
+  .wavy {
+    @apply [mask:var(--wavy-mask)] [-webkit-mask:var(--wavy-mask)] mt-[-62px];
   }
 }
 
@@ -34,6 +37,11 @@
   --spacing-header-h: 100px;
   --spacing-border-r: 5px;
   --spacing-card-w: 300px;
+  --wavy-mask:
+    radial-gradient(88.68px at 50% calc(0% + 122.2px), #000 99%, #0000 101%)
+      calc(50% - 94px) 0 / 188px 100%,
+    radial-gradient(88.68px at 50% calc(0% - 75.2px), #0000 99%, #000 101%) 50%
+      calc(0% + 47px) / 188px 100% repeat-x;
 
   --main-transition: 0.3s;
 
@@ -137,7 +145,8 @@
 
 @font-face {
   font-family: Rubik;
-  src: url("./assets/fonts/Rubik/static/Rubik-MediumItalic.ttf") format("truetype");
+  src: url("./assets/fonts/Rubik/static/Rubik-MediumItalic.ttf")
+    format("truetype");
   font-weight: 500;
   font-style: italic;
 }
@@ -151,7 +160,8 @@
 
 @font-face {
   font-family: Rubik;
-  src: url("./assets/fonts/Rubik/static/Rubik-SemiBoldItalic.ttf") format("truetype");
+  src: url("./assets/fonts/Rubik/static/Rubik-SemiBoldItalic.ttf")
+    format("truetype");
   font-weight: 600;
   font-style: italic;
 }

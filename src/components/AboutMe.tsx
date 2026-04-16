@@ -6,7 +6,7 @@ import SectionTitle from "./UI/SectionTitle";
 
 export default function AboutMe() {
   return (
-    <section id="about-me">
+    <section className="wavy" id="about-me">
       <Container>
         <SectionTitle>About Me</SectionTitle>
         <Cards>
