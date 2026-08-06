@@ -269,7 +269,7 @@ export const pageData: PageData = {
     },
   ],
   contact: {
-    emails: ["m.ahmed2363@nu.edu.eg", "muhammad.ahmed.connect@gmail.com"],
+    emails: ["muhammad.elrassam@gmail.com"],
     phones: ["+201146771613"],
   },
 };
