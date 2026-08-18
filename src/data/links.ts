@@ -11,22 +11,22 @@ export const navLinks = [
 export const socialMediaLinks = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/muhammad-ahmed-nu",
+    url: "https://www.linkedin.com/in/muhammad-elrassam",
     icon: "fa-brands fa-linkedin",
   },
   {
     name: "GitHub",
-    url: "https://github.com/muhammad-ahmed-gh",
+    url: "https://github.com/muhammad-elrassam",
     icon: "fa-brands fa-github",
   },
   {
     name: "Facebook",
-    url: "https://www.facebook.com/mohammed.elrassam.58",
+    url: "https://www.facebook.com/muhammad.elrassam",
     icon: "fa-brands fa-square-facebook",
   },
   {
     name: "Telegram",
-    url: "https://t.me/MAhmed2363",
+    url: "https://t.me/mElrassam",
     icon: "fa-brands fa-telegram",
   },
 ];

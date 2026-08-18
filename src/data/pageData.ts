@@ -150,7 +150,7 @@ export const pageData: PageData = {
       status: "inProgress",
       links: {
         github:
-          "https://github.com/muhammad-ahmed-gh/dritto",
+          "https://github.com/muhammad-elrassam/dritto",
       },
     },
     {
@@ -161,7 +161,7 @@ export const pageData: PageData = {
       status: "done",
       links: {
         github:
-          "https://github.com/muhammad-ahmed-gh/flavor-ai",
+          "https://github.com/muhammad-elrassam/flavor-ai",
       },
     },
     {
@@ -172,7 +172,7 @@ export const pageData: PageData = {
       status: "done",
       links: {
         github:
-          "https://github.com/muhammad-ahmed-gh/studo-schedule-generator",
+          "https://github.com/muhammad-elrassam/studo-schedule-generator",
       },
     },
     {
@@ -183,7 +183,7 @@ export const pageData: PageData = {
       status: "done",
       links: {
         github:
-          "https://github.com/muhammad-ahmed-gh/tenzies-game",
+          "https://github.com/muhammad-elrassam/tenzies-game",
       },
     },
     {
@@ -194,7 +194,7 @@ export const pageData: PageData = {
       status: "done",
       links: {
         github:
-          "https://github.com/muhammad-ahmed-gh/meme-generator",
+          "https://github.com/muhammad-elrassam/meme-generator",
       },
     },
     {
@@ -204,8 +204,8 @@ export const pageData: PageData = {
       techStack: ["HTML", "CSS"],
       status: "inProgress",
       links: {
-        github: "https://github.com/muhammad-ahmed-gh/template-hub",
-        live: "https://muhammad-ahmed-gh.github.io/template-hub",
+        github: "https://github.com/muhammad-elrassam/template-hub",
+        live: "https://muhammad-elrassam.github.io/template-hub",
       },
     },
     {
@@ -215,8 +215,8 @@ export const pageData: PageData = {
       techStack: ["HTML", "CSS", "JavaScript"],
       status: "inProgress",
       links: {
-        github: "https://github.com/muhammad-ahmed-gh/my-mini-projects",
-        live: "https://muhammad-ahmed-gh.github.io/my-mini-projects",
+        github: "https://github.com/muhammad-elrassam/my-mini-projects",
+        live: "https://muhammad-elrassam.github.io/my-mini-projects",
       },
     },
     {
@@ -227,8 +227,8 @@ export const pageData: PageData = {
       status: "inProgress",
       links: {
         github:
-          "https://github.com/muhammad-ahmed-gh/dashboard-html-css-template-4/",
-        live: "https://muhammad-ahmed-gh.github.io/dashboard-html-css-template-4",
+          "https://github.com/muhammad-elrassam/dashboard-html-css-template-4/",
+        live: "https://muhammad-elrassam.github.io/dashboard-html-css-template-4",
       },
     },
     {
@@ -239,8 +239,8 @@ export const pageData: PageData = {
       status: "inProgress",
       links: {
         github:
-          "https://github.com/muhammad-ahmed-gh/nexo-html-css-template-3/",
-        live: "https://muhammad-ahmed-gh.github.io/nexo-html-css-template-3",
+          "https://github.com/muhammad-elrassam/nexo-html-css-template-3/",
+        live: "https://muhammad-elrassam.github.io/nexo-html-css-template-3",
       },
     },
     {
@@ -251,8 +251,8 @@ export const pageData: PageData = {
       status: "done",
       links: {
         github:
-          "https://github.com/muhammad-ahmed-gh/kasper-html-css-template-2/",
-        live: "https://muhammad-ahmed-gh.github.io/kasper-html-css-template-2",
+          "https://github.com/muhammad-elrassam/kasper-html-css-template-2/",
+        live: "https://muhammad-elrassam.github.io/kasper-html-css-template-2",
       },
     },
     {
@@ -263,8 +263,8 @@ export const pageData: PageData = {
       status: "done",
       links: {
         github:
-          "https://github.com/muhammad-ahmed-gh/leon-html-css-template-1/",
-        live: "https://muhammad-ahmed-gh.github.io/leon-html-css-template-1",
+          "https://github.com/muhammad-elrassam/leon-html-css-template-1/",
+        live: "https://muhammad-elrassam.github.io/leon-html-css-template-1",
       },
     },
   ],

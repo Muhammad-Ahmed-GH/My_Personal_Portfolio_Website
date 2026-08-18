@@ -2,7 +2,7 @@
 
 A clean, responsive personal portfolio built with React, Tailwind CSS, and Vite to showcase projects, skills, and contact information.
 
-Live demo: [Visit Now!](https://muhammad-ahmed-tech.web.app)
+Live demo: [Visit Now!](https://muhammad-elrassam.web.app)
 
 ## Overview
 
@@ -37,7 +37,7 @@ This repository contains the source for a modern portfolio website showcasing pr
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/muhammad-ahmed-gh/my-personal-portfolio-website.git
+   git clone https://github.com/muhammad-elrassam/my-personal-portfolio-website.git
    cd my-personal-portfolio-website
    ```
 
@@ -115,8 +115,8 @@ This project is provided under the MIT License. See LICENSE for details.
 
 ## Contact
 
-- Email: [m.ahmed2363@nu.edu.eg](m.ahmed2363@nu.edu.eg) / [muhammad.ahmed.connect@gmail.com](muhammad.ahmed.connect@gmail.com)
-- LinkedIn: [Muhammad Ahmed](https://www.linkedin.com/in/muhammad-ahmed-nu)
+- Email: [muhammad.elrassam@gmail.com](muhammad.elrassam@gmail.com)
+- LinkedIn: [Muhammad Ahmed](https://www.linkedin.com/in/muhammad-elrassam)
 
 ---
 
